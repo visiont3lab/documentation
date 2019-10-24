@@ -24,6 +24,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
 ## Varie:
+- [Keras.js-online-app](https://transcranial.github.io/keras-js/#/mnist-cnn) [to copy]  
 - [REACT_CCTV](https://dev.to/graphtylove/how-to-automate-attendance-record-with-face-recognition-python-and-react-4413?fbclid=IwAR0UbGQ9p_SHhFyO6Dr3KHRVsqTfRMboPAOMqPWIjKPqO4Rs0hi2cQfrcsQ
 ) [_GOOD_]  
 - [streamlit](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace) [_comment_]  
