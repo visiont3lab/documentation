@@ -1,0 +1,8 @@
+{
+  "docs": {
+    "Installation Setup and useful scripts": ["deep_learning_setup_guide", "docker_setup_guide"],
+    "Research": ["face_recognition","object_detection","optical_character_recognition", "photometry", "segmentation", "streaming", "robotic_operating_system"],
+    "Templates" : ["website_template"],
+    "Notes": ["common_issues"]
+  }
+}
