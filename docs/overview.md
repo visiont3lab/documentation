@@ -9,7 +9,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
 
-
 ## Distillation:
 - [Disttilation GitHub](https://github.com/dkozlov/awesome-knowledge-distillation) [_comment_]  
 - [Disttilation Pytorch](https://github.com/NervanaSystems/distiller) [_comment_]  
@@ -47,9 +46,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Pynq
 - [cv2-pynq](https://www.youtube.com/watch?v=nRxe-NqvOl8) [_comment_]  
-
-## XXX
-- [xxxxx](https://site) [_comment_]  
 
 ## Dataset from Oxford
 - [best dataset image-video-text](http://www.robots.ox.ac.uk/~vgg/data/) [_comment_]  
