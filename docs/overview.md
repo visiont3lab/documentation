@@ -30,6 +30,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [streamlit](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace) [_comment_]  
 - [COLAB DEEP LEARNING ADVANCED](https://github.com/tugstugi/dl-colab-notebooks) [GOOD]  
 - [Deep Learning in Medical AI 2018/2019](https://github.com/tensorflow/tensorboard/tree/master/docs) [_comment_]  
+- [DetectionSuite's for vision-all dataset test](https://www.youtube.com/watch?v=DpK5gqwoSBc) [very good]  
 - [ALBUMENTATION](https://github.com/albu/albumentations) [LIBRARY COMPUTER_VISION_]  
 - [GOD-GITHUB](https://github.com/JdeRobot/neuralFPGA) [_comment_] 
 - [GOD-YOUTUBE](https://www.youtube.com/watch?v=KFrEPCOA0p4&list=PLgB5c9xg9C91DJ30WFlHfHAhMECeho-gU&index=2) [_comment_] 
