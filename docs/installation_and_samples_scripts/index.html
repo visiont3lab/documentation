@@ -1,0 +1,651 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Installation Scripts · Visionlab</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Installation Scripts Opencv 2.4 for Ubuntu 18.04 LTS"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Installation Scripts · Visionlab"/><meta property="og:type" content="website"/><meta property="og:url" content="https://visiont3lab.github.io/documentation/"/><meta property="og:description" content="## Installation Scripts Opencv 2.4 for Ubuntu 18.04 LTS"/><meta property="og:image" content="https://visiont3lab.github.io/documentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://visiont3lab.github.io/documentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentation/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css"/><link rel="alternate" type="application/atom+xml" href="https://visiont3lab.github.io/documentation/blog/atom.xml" title="Visionlab Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://visiont3lab.github.io/documentation/blog/feed.xml" title="Visionlab Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/documentation/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentation/css/main.css"/><script src="/documentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/favicon.ico" alt="Visionlab"/><h2 class="headerTitleWithLogo">Visionlab</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/documentation/docs/deep_learning_setup_guide" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/documentation/docs/docker_setup_guide" target="_self">API</a></li><li class=""><a href="/documentation/help" target="_self">Help</a></li><li class=""><a href="/documentation/blog/" target="_self">Blog</a></li><li class=""><a target="_self"></a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Research</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation Setup and useful scripts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/deep_learning_setup_guide">Deep Learning Setup Guide</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/docker_setup_guide">Docker Setup Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Research</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/overview">Overview</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/installation_and_samples_scripts">Installation Scripts</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/face_recognition">Face Recognition</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/object_detection">Object Detection</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/optical_character_recognition">Optical Character Recognition</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/photometry">Photometry</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/segmentation">Segmentation</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/streaming">Streaming</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/robotic_operating_system">Robotic Operating System</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Templates</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/website_template">Website Template</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Notes</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/common_issues">Common Issues</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/visiont3lab/documentation/edit/master/docs/installation_and_samples_scripts.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Installation Scripts</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="installation-scripts-opencv-24-for-ubuntu-1804-lts"></a><a href="#installation-scripts-opencv-24-for-ubuntu-1804-lts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation Scripts Opencv 2.4 for Ubuntu 18.04 LTS</h2>
+<p>Opencv 2.4 installation with static library. No cuda support.</p>
+<pre><code class="hljs"><span class="hljs-meta">#!/bin/bash  </span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"Welcome to the Installation script, let's start!"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"Install OpenCV"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+
+sudo add-apt-repository <span class="hljs-string">"deb http://security.ubuntu.com/ubuntu xenial-security main"</span>
+sudo apt -y update
+sudo apt -y install libjasper1 
+sudo apt-get install openexr
+
+sudo apt-get install libgtk2.0-dev 
+mkdir -p <span class="hljs-variable">$HOME</span>/lib
+<span class="hljs-built_in">cd</span>  <span class="hljs-variable">$HOME</span>/lib
+git <span class="hljs-built_in">clone</span> https://github.com/opencv/opencv.git
+<span class="hljs-built_in">cd</span> opencv
+git checkout 2.4
+mkdir release
+<span class="hljs-built_in">cd</span> release
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D BUILD_EXAMPLES=OFF -D BUILD_TESTS=OFF -D BUILD_opencv_flann=OFF
+ -D BUILD_opencv_photo=OFF -D BUILD_opencv_ml=OFF -D BUILD_opencv_objdetect=OFF -D BUILD_opencv_video=OFF -D BUILD_opencv_superres=OFF
+  -D BUILD_SHARED_LIBS=OFF -D WITH_CUDA=OFF -D WITH_GTK=ON -D WITH_TIFF=OFF ..
+
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"Installation completed"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="installation-scripts-opencv-4-for-ubuntu-1804-lts"></a><a href="#installation-scripts-opencv-4-for-ubuntu-1804-lts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation Scripts Opencv 4 for Ubuntu 18.04 LTS</h2>
+<p>Installation Opencv 4 with Cuda Support. <a href="https://www.learnopencv.com/install-opencv-4-on-ubuntu-18-04/">Reference page</a></p>
+<pre><code class="hljs"><span class="hljs-comment">#!/bin/bash  </span>
+echo "<span class="hljs-comment">------------------------------------------------"</span>
+echo "Welcome to the Installation script, let's <span class="hljs-keyword">start</span>!<span class="hljs-string">"
+echo "</span><span class="hljs-comment">------------------------------------------------"</span>
+
+echo <span class="hljs-string">"------------------------------------------------"</span>
+echo <span class="hljs-string">"Install OpenCV 4 compile with Cuda"</span>
+echo <span class="hljs-string">"------------------------------------------------"</span>
+
+<span class="hljs-comment"># Installation steps</span>
+
+<span class="hljs-comment"># Compulsory dependencies</span>
+sudo apt -y <span class="hljs-keyword">install</span> <span class="hljs-keyword">build</span>-essential checkinstall cmake pkg-config yasm
+sudo apt -y <span class="hljs-keyword">install</span> git gfortran
+sudo apt -y <span class="hljs-keyword">install</span> libjpeg8-dev libpng-dev
+sudo apt -y <span class="hljs-keyword">install</span> software-properties-common
+sudo <span class="hljs-keyword">add</span>-apt-repository <span class="hljs-string">"deb http://security.ubuntu.com/ubuntu xenial-security main"</span>
+sudo apt -y <span class="hljs-keyword">update</span>
+sudo apt -y <span class="hljs-keyword">install</span> libjasper1 <span class="hljs-comment"># This dependency is available in xenial repo</span>
+sudo apt -y <span class="hljs-keyword">install</span> libtiff-dev
+sudo apt -y <span class="hljs-keyword">install</span> libavcodec-dev libavformat-dev libswscale-dev libdc1394<span class="hljs-number">-22</span>-dev
+sudo apt -y <span class="hljs-keyword">install</span> libxine2-dev libv4l-dev
+cd /usr/<span class="hljs-keyword">include</span>/linux
+sudo <span class="hljs-keyword">ln</span> -s -f ../libv4l1-videodev.h videodev.h
+cd <span class="hljs-string">"$cwd"</span> <span class="hljs-comment"># Not clear what it does</span>
+sudo apt -y <span class="hljs-keyword">install</span> libgstreamer1<span class="hljs-number">.0</span>-dev libgstreamer-plugins-base1<span class="hljs-number">.0</span>-dev
+sudo apt -y <span class="hljs-keyword">install</span> libgtk2<span class="hljs-number">.0</span>-dev libtbb-dev qt5-<span class="hljs-keyword">default</span>
+sudo apt -y <span class="hljs-keyword">install</span> libatlas-base-dev
+sudo apt -y <span class="hljs-keyword">install</span> libfaac-dev libmp3lame-dev libtheora-dev
+sudo apt -y <span class="hljs-keyword">install</span> libvorbis-dev libxvidcore-dev
+sudo apt -y <span class="hljs-keyword">install</span> libopencore-amrnb-dev libopencore-amrwb-dev
+sudo apt -y <span class="hljs-keyword">install</span> libavresample-dev
+sudo apt -y <span class="hljs-keyword">install</span> x264 v4l-utils
+<span class="hljs-comment"># Optional dependencies</span>
+sudo apt -y <span class="hljs-keyword">install</span> libprotobuf-dev protobuf-compiler
+sudo apt -y <span class="hljs-keyword">install</span> libgoogle-glog-dev libgflags-dev
+sudo apt -y <span class="hljs-keyword">install</span> libgphoto2-dev libeigen3-dev libhdf5-dev doxygen
+
+<span class="hljs-comment"># Setup opencv and compilation</span>
+mkdir -p $HOME/lib &amp;&amp; cd $HOME/lib
+git <span class="hljs-keyword">clone</span> https://github.com/opencv/opencv.git
+cd opencv
+git checkout <span class="hljs-keyword">master</span> <span class="hljs-comment">#  4.0.1-dev Commit 4.0.1-66-ge5917a8fa </span>
+mkdir <span class="hljs-keyword">release</span>
+cd <span class="hljs-keyword">release</span>
+cmake -DCMAKE_BUILD_TYPE=<span class="hljs-keyword">Release</span> -DOPENCV_GENERATE_PKGCONFIG=<span class="hljs-keyword">ON</span> -DCMAKE_INSTALL_PREFIX=/usr/<span class="hljs-keyword">local</span> -DBUILD_PNG=<span class="hljs-keyword">OFF</span> -DBUILD_TIFF=<span class="hljs-keyword">OFF</span> -DBUILD_TBB=<span class="hljs-keyword">OFF</span> -DBUILD_JPEG=<span class="hljs-keyword">OFF</span> \
+ -DBUILD_JASPER=<span class="hljs-keyword">OFF</span> -DBUILD_ZLIB=<span class="hljs-keyword">OFF</span> -DBUILD_EXAMPLES=<span class="hljs-keyword">OFF</span> -DBUILD_opencv_java=<span class="hljs-keyword">OFF</span> -DBUILD_opencv_python2=<span class="hljs-keyword">ON</span> -DBUILD_opencv_python3=<span class="hljs-keyword">ON</span> -DWITH_V4L=<span class="hljs-keyword">ON</span> -DWITH_OPENGL=<span class="hljs-keyword">ON</span> \
+  -DWITH_OPENCL=<span class="hljs-keyword">OFF</span> -DWITH_OPENMP=<span class="hljs-keyword">OFF</span> -DWITH_FFMPEG=<span class="hljs-keyword">ON</span> -DWITH_GSTREAMER=<span class="hljs-keyword">OFF</span> -DWITH_GSTREAMER_0_10=<span class="hljs-keyword">OFF</span> -DWITH_CUDA=<span class="hljs-keyword">ON</span> -DWITH_NVCUVID=<span class="hljs-keyword">OFF</span> -DWITH_GTK=<span class="hljs-keyword">ON</span> -DWITH_VTK=<span class="hljs-keyword">OFF</span> \
+  -DWITH_TBB=<span class="hljs-keyword">ON</span> -DWITH_1394=<span class="hljs-keyword">OFF</span> -DWITH_OPENEXR=<span class="hljs-keyword">OFF</span> -DCUDA_TOOLKIT_ROOT_DIR=/usr/<span class="hljs-keyword">local</span>/cuda<span class="hljs-number">-9.0</span> -DCMAKE_C_COMPILER=/usr/<span class="hljs-keyword">bin</span>/gcc<span class="hljs-number">-6</span> -DCUDA_ARCH_BIN=<span class="hljs-string">'5.0 6.0 6.1 6.2'</span> \
+  -DCUDA_ARCH_PTX=<span class="hljs-string">""</span> -DINSTALL_C_EXAMPLES=<span class="hljs-keyword">OFF</span> -DINSTALL_TESTS=<span class="hljs-keyword">OFF</span> -DINSTALL_PYTHON_EXAMPLES=<span class="hljs-keyword">OFF</span> ..
+make
+<span class="hljs-comment"># sudo make install</span>
+
+echo <span class="hljs-string">"------------------------------------------------"</span>
+echo <span class="hljs-string">"Installation completed"</span>
+echo <span class="hljs-string">"------------------------------------------------"</span>
+
+<span class="hljs-comment"># ----------------------------- Extra  information</span>
+<span class="hljs-comment"># To solve opencv unsupported GNU version! gcc versions later than 6 are not supported!</span>
+<span class="hljs-comment"># ADD -DCMAKE_C_COMPILER=/usr/bin/gcc-6  , note that it is not imporntant to set also g++ ( I am using g++ 7.3)</span>
+<span class="hljs-comment"># Cjeck your GPU Architecture on https://en.wikipedia.org/wiki/CUDA</span>
+<span class="hljs-comment"># DO not worry about sudo make install (the installation prefix /usr/local will automatically override https://stackoverflow.com/questions/9276169/removing-all-installed-opencv-libs</span>
+<span class="hljs-comment"># To use the opencv installed library oin python do</span>
+<span class="hljs-comment"># $ workon python3-env </span>
+<span class="hljs-comment"># $ pip uninstall opencv</span>
+<span class="hljs-comment"># The compilation will automaticall generate the package config file "opencv.pc" inside /usr/local/lib </span>
+<span class="hljs-comment"># $ cp $THERMOHUMAN/lib/opencv/release/lib/python3/cv2.cpython-36m-x86_64-linux-gnu.so $HOME/.virtualenvs/python3-env/lib/python3.6/site-packages/cv2.so</span>
+<span class="hljs-comment"># $ python -c "import cv2; print(cv2.__version__); print(cv2.getBuildInformation())"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="installation-script-to-build-tensorflow-from-source"></a><a href="#installation-script-to-build-tensorflow-from-source" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation Script to Build tensorflow from Source</h2>
+<p>Installation script to build Tensorflow &quot;libtensorflow_cc.so&quot; from Source.</p>
+<pre><code class="hljs">#!/bin/bash  
+
+# Main reference http<span class="hljs-variable">s:</span>//medium.<span class="hljs-keyword">com</span>/@Oysiyl/install-tensorflow-<span class="hljs-number">1</span>-<span class="hljs-number">8</span>-<span class="hljs-number">0</span>-with-gpu-from-<span class="hljs-keyword">source</span>-<span class="hljs-keyword">on</span>-ubuntu-<span class="hljs-number">18</span>-<span class="hljs-number">04</span>-bionic-beaver-<span class="hljs-number">35</span>cfa9df3600
+# Second reference  http<span class="hljs-variable">s:</span>//gist.github.<span class="hljs-keyword">com</span>/Brainiarc7/<span class="hljs-number">6</span>d6c3f23ea057775b72c52817759b25c
+# Third  reference http<span class="hljs-variable">s:</span>//medium.<span class="hljs-keyword">com</span>/@fanzongshaoxing/use-tensorflow-<span class="hljs-keyword">c</span>-api-with-opencv3-bacb83ca5683
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Welcome to the Installation script, let's start!"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+
+#sudo apt-<span class="hljs-built_in">get</span> install cmake          # Compiler dependency
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Install Bazel  0.14.0"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+
+# Reference: http<span class="hljs-variable">s:</span>//docs.bazel.build/versions/master/install-ubuntu.html
+# Issue with this cause the  fact that bazel <span class="hljs-keyword">update</span> faste than tensolfow
+<span class="hljs-built_in">mkdir</span> -<span class="hljs-keyword">p</span> $HOME/lib &amp;&amp; <span class="hljs-keyword">cd</span> $HOME/lib
+sudo apt-<span class="hljs-built_in">get</span> install openjdk-<span class="hljs-number">8</span>-jdk
+wget http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/bazelbuild/bazel/releases/download/<span class="hljs-number">0.14</span>.<span class="hljs-number">0</span>/bazel-<span class="hljs-number">0.14</span>.<span class="hljs-number">0</span>-installer-linux-x86_64.<span class="hljs-keyword">sh</span>
+chmod +<span class="hljs-keyword">x</span> bazel-<span class="hljs-number">0.14</span>.<span class="hljs-number">0</span>-installer-linux-x86_64.<span class="hljs-keyword">sh</span>
+./bazel-<span class="hljs-number">0.14</span>.<span class="hljs-number">0</span>-installer-linux-x86_64.<span class="hljs-keyword">sh</span> --user
+<span class="hljs-keyword">echo</span> <span class="hljs-string">'export PATH="$PATH:$HOME/bin"'</span> &gt;&gt; ~/.bashrc
+
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Install Tensorflow"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+# Reference:  http<span class="hljs-variable">s:</span>//tuanphuc.github.io/standalone-tensorflow-cpp/
+sudo apt-<span class="hljs-built_in">get</span> install <span class="hljs-keyword">python</span>-numpy <span class="hljs-keyword">python</span>-dev <span class="hljs-keyword">python</span>-pip <span class="hljs-keyword">python</span>-wheel 
+<span class="hljs-keyword">cd</span> $HOME/lib
+git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/tensorflow/tensorflow
+<span class="hljs-keyword">cd</span> tensorflow
+git checkout r1.<span class="hljs-number">8</span>
+git pull
+./configure
+bazel build  --jobs <span class="hljs-number">2</span> -<span class="hljs-keyword">c</span> <span class="hljs-keyword">opt</span> --copt=-mavx --copt=-mavx2 --copt=-mfma --copt=-mfpmath=both --copt=-msse4.<span class="hljs-number">2</span> --config=monolithic //tensorflo<span class="hljs-variable">w:libtensorflow_cc</span>.<span class="hljs-keyword">so</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Installation completed"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+</code></pre>
+<pre><code class="hljs"><span class="hljs-comment"># ---------- Issue</span>
+<span class="hljs-comment"># Bazel Issue</span>
+<span class="hljs-comment"># Install latest bazel 25 </span>
+sudo apt-get install openjdk-<span class="hljs-number">8</span>-jdk  
+cd $HOME/<span class="hljs-class"><span class="hljs-keyword">lib</span></span>
+echo <span class="hljs-string">"deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8"</span> | sudo tee /etc/apt/sources.list.d/bazel.list
+curl <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/bazel.build/bazel</span>-release.pub.gpg | sudo apt-key add -
+sudo apt-get update &amp;&amp; sudo apt-get install bazel  <span class="hljs-comment"># Install bazel 0.25.2 (check $ bazel version) </span>
+
+<span class="hljs-comment"># Absl Issue</span>
+<span class="hljs-comment"># if u have this problem </span>
+<span class="hljs-comment"># at this commit 12e86468e2a9b57e636c1d0afcdf3f657f6df0b6</span>
+<span class="hljs-comment"># we have absl issue. https://github.com/tensorflow/tensorflow/issues/22007</span>
+<span class="hljs-comment"># It is solved doing</span>
+cd thermohuman_ws/<span class="hljs-class"><span class="hljs-keyword">lib</span>/<span class="hljs-title">tensorflow</span></span>
+git clone <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/github.com/abseil</span><span class="hljs-regexp">/abseil-cpp.git
+ln -s abseil-cpp/absl</span> ./absl
+</code></pre>
+<pre><code class="hljs">./configure
+You have bazel 0.14.0 installed.
+Please specify the location of python. [Default is /usr/bin/python]: 
+
+Found possible Python library paths:
+  /usr/local/lib/python2.7/dist-packages
+  /usr/lib/python2.7/dist-packages
+Please input the desired Python library path <span class="hljs-keyword">to</span> use. <span class="hljs-built_in"> Default </span>is [/usr/local/lib/python2.7/dist-packages]
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with jemalloc as malloc support? [Y/n]: y
+jemalloc as malloc support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with Google Cloud Platform support? [Y/n]: n
+<span class="hljs-literal">No</span> Google Cloud Platform support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with Hadoop File<span class="hljs-built_in"> System </span>support? [Y/n]: n
+<span class="hljs-literal">No</span> Hadoop File<span class="hljs-built_in"> System </span>support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with Amazon S3 File<span class="hljs-built_in"> System </span>support? [Y/n]: n
+<span class="hljs-literal">No</span> Amazon S3 File<span class="hljs-built_in"> System </span>support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with Apache Kafka Platform support? [Y/n]: n
+<span class="hljs-literal">No</span> Apache Kafka Platform support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with XLA JIT support? [y/N]: n
+<span class="hljs-literal">No</span> XLA JIT support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with GDR support? [y/N]: n
+<span class="hljs-literal">No</span> GDR support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with VERBS support? [y/N]: n
+<span class="hljs-literal">No</span> VERBS support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with OpenCL SYCL support? [y/N]: n
+<span class="hljs-literal">No</span> OpenCL SYCL support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with CUDA support? [y/N]: n
+<span class="hljs-literal">No</span> CUDA support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> download a fresh release of clang? (Experimental) [y/N]: n
+Clang will <span class="hljs-keyword">not</span> be downloaded.
+
+<span class="hljs-keyword">Do</span> you wish <span class="hljs-keyword">to</span> build TensorFlow with MPI support? [y/N]: n
+<span class="hljs-literal">No</span> MPI support will be enabled <span class="hljs-keyword">for</span> TensorFlow.
+
+Please specify optimization flags <span class="hljs-keyword">to</span> use during compilation when bazel option <span class="hljs-string">"--config=opt"</span> is specified [Default is <span class="hljs-attribute">-march</span>=native]: 
+
+
+Would you like <span class="hljs-keyword">to</span> interactively configure ./WORKSPACE <span class="hljs-keyword">for</span> Android builds? [y/N]: n
+<span class="hljs-keyword">Not</span> configuring the WORKSPACE <span class="hljs-keyword">for</span> Android builds.
+
+Preconfigured Bazel build configs. You can use any of the below by adding <span class="hljs-string">"--config=&lt;&gt;"</span> <span class="hljs-keyword">to</span> your build command. See tools/bazel.rc <span class="hljs-keyword">for</span> more details.
+    <span class="hljs-attribute">--config</span>=mkl            # Build with MKL support.
+    <span class="hljs-attribute">--config</span>=monolithic     #<span class="hljs-built_in"> Config </span><span class="hljs-keyword">for</span> mostly static monolithic build.
+Configuration finished
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="installation-to-build-simpleelastix-lib"></a><a href="#installation-to-build-simpleelastix-lib" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation to build SimpleElastix Lib</h2>
+<p>Medical Image Registration Library. <a href="https://simpleelastix.github.io/">Reference</a></p>
+<pre><code class="hljs">#!/bin/bash  
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Welcome to the Installation script, let's start!"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Install SimpleElastix"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+
+<span class="hljs-keyword">cd</span> $HOME/lib
+git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/SuperElastix/SimpleElastix
+<span class="hljs-keyword">cd</span> SimpleElastix
+<span class="hljs-built_in">mkdir</span> build
+<span class="hljs-keyword">cd</span> build
+cmake ../SuperBuild
+<span class="hljs-keyword">make</span> -j2   #(j2 Means <span class="hljs-keyword">number</span> of cores. <span class="hljs-keyword">if</span> <span class="hljs-keyword">u</span> have <span class="hljs-number">16</span>GB of ram <span class="hljs-keyword">u</span> can run <span class="hljs-keyword">make</span> -j4 otherwise <span class="hljs-keyword">if</span> <span class="hljs-keyword">u</span> have <span class="hljs-number">8</span> <span class="hljs-keyword">u</span> have <span class="hljs-keyword">to</span> run <span class="hljs-keyword">make</span> -j2)
+<span class="hljs-keyword">cd</span> $THERMOHUMAN/lib/SimpleElastix/build/SimpleITK-build/Wrapping/Python/Packaging
+sudo <span class="hljs-keyword">python</span> setup.<span class="hljs-keyword">py</span> install
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Installation completed"</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+
+
+# Might <span class="hljs-keyword">be</span> usefu<span class="hljs-variable">l:</span> cmake -D BUILD_EXAMPLES=OFF -D BUILD_TESTING=OFF -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=$HOME/SimpleElastix/build -D WRAP_CSHARP=OFF -D  WRAP_JAVA=OFF -D WRAP_LUA=OFF -D WRAP_PYTHON=OFF -D WRAP_R=OFF -D WRAP_RUBY=OFF -D WRAP_TCL=OFF ..
+
+# Cmake <span class="hljs-keyword">is</span> required <span class="hljs-keyword">if</span> <span class="hljs-keyword">u</span> have error <span class="hljs-keyword">do</span>
+# http<span class="hljs-variable">s:</span>//medium.<span class="hljs-keyword">com</span>/@fanzongshaoxing/use-tensorflow-<span class="hljs-keyword">c</span>-api-with-opencv3-bacb83ca5683
+# Dowload cmake <span class="hljs-keyword">version</span> <span class="hljs-number">1.1</span> form here http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/Kitware/CMake/releases
+# tar xcvf cmake-<span class="hljs-number">3.11</span>.<span class="hljs-number">1</span>-Linux-x86_64.tar.gz
+# <span class="hljs-keyword">cd</span> cmake-<span class="hljs-number">3.14</span>.<span class="hljs-number">4</span>-Linux-x86_64
+# sudo apt-<span class="hljs-built_in">get</span> purge cmake
+# sudo <span class="hljs-keyword">cp</span> -r bin /usr/
+# sudo <span class="hljs-keyword">cp</span> -r share /usr/
+# sudo <span class="hljs-keyword">cp</span> -r doc /usr/share/
+# sudo <span class="hljs-keyword">cp</span> -r man /usr/share/
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="installation-script-qt-creator"></a><a href="#installation-script-qt-creator" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation script Qt creator</h2>
+<pre><code class="hljs"><span class="hljs-meta">#!/bin/bash </span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"-------------- Qt Creator 3.5.1 ----------------"</span>
+<span class="hljs-comment">#https://www.lucidarme.me/how-install-documentation-for-qt-creator/</span>
+sudo apt-get install build-essential
+sudo apt-get install qtcreator    
+sudo apt-get install qt5-default 
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"------------------------------------------------"</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">"----------- Installation Complete --------------"</span>
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="install-docker-and-nvidia-docker-script"></a><a href="#install-docker-and-nvidia-docker-script" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install Docker and Nvidia-Docker script</h2>
+<p>Installation Script to use docker and nvidia-docker. <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04">Reference Docker</a> and <a href="https://github.com/NVIDIA/nvidia-docker">Reference Nvidia-Docker</a></p>
+<pre><code class="hljs"><span class="hljs-meta">#!/bin/bash</span>
+<span class="hljs-meta"># DOCKER</span>
+<span class="hljs-meta"># Reference https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04</span>
+sudo apt update 
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https:<span class="hljs-comment">//download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</span>
+sudo add-apt-repository <span class="hljs-string">"deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"</span>
+sudo apt update
+sudo apt install docker-ce
+sudo usermod -aG docker ${USER}
+su - ${USER}
+docker info
+docker run -it hello-world 
+<span class="hljs-meta"># be sure that $sudo systemctl status docker returns active. If this does not occur, do $sudo systemctl start docker</span>
+<span class="hljs-meta"># if systemctl not found $sudo apt install systemd</span>
+
+<span class="hljs-meta"># Optional NVIDIA-DOCKER</span>
+<span class="hljs-meta"># if u are interested in using docker with nvidia u can dowload nvidia-docker</span>
+<span class="hljs-meta"># Reference: https://github.com/NVIDIA/nvidia-docker</span>
+<span class="hljs-meta">#curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -</span>
+<span class="hljs-meta">#distribution=$(. /etc/os-release;echo $ID$VERSION_ID)</span>
+<span class="hljs-meta">#curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list</span>
+<span class="hljs-meta">#sudo apt-get update</span>
+<span class="hljs-meta"># Install nvidia-docker2 and reload the Docker daemon configuration</span>
+<span class="hljs-meta"># sudo apt-get install -y nvidia-docker2</span>
+<span class="hljs-meta">#sudo pkill -SIGHUP dockerd</span>
+<span class="hljs-meta"># Test nvidia-smi with the latest official CUDA image</span>
+<span class="hljs-meta"># docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="installtion-script-lets-encrypt"></a><a href="#installtion-script-lets-encrypt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installtion Script Let's Encrypt</h2>
+<p>We provide a script to create SSL certificate self-signed using Certbot.</p>
+<h1><a class="anchor" aria-hidden="true" id="set-up-lets-encrypt"></a><a href="#set-up-lets-encrypt" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Set up let's Encrypt</h1>
+<p><a href="https://certbot.eff.org/lets-encrypt/ubuntubionic-other">Reference</a></p>
+<pre><code class="hljs">apt-get update
+apt-get install software-properties-common<span class="hljs-built_in">
+add-apt-repository </span>universe<span class="hljs-built_in">
+add-apt-repository </span>ppa:certbot/certbot
+apt-get update
+apt-get install certbot
+</code></pre>
+<p>Get Certificate:</p>
+<pre><code class="hljs">certbot certonly <span class="hljs-comment">--standalone</span>
+</code></pre>
+<p>Insert domain name chosen: mydomain, Email:  <a href="mailto:myemail@gmail.com">myemail@gmail.com</a> , then it will return the certificates!!
+The email is important for the renowal! To update the email do:</p>
+<pre><code class="hljs"><span class="hljs-selector-tag">sudo</span> <span class="hljs-selector-tag">certbot</span> <span class="hljs-selector-tag">update_account</span> <span class="hljs-selector-tag">--email</span>  <span class="hljs-selector-tag">myemail</span>@<span class="hljs-keyword">gmail</span>.<span class="hljs-keyword">com</span>
+</code></pre>
+<p>Automatic renowal enable (we have enabled it):</p>
+<pre><code class="hljs">certbot renew --dry-<span class="hljs-keyword">run</span><span class="bash">
+</span></code></pre>
+<p>Certificate are contained available at:</p>
+<pre><code class="hljs">    <span class="hljs-string">SSL_PRIVATE_KEY :</span> <span class="hljs-string">'/etc/letsencrypt/live/mydomain/privkey.pem'</span>,
+    <span class="hljs-string">SSL_CERTIFICATE :</span> <span class="hljs-string">'/etc/letsencrypt/live/mydomain/fullchain.pem'</span>
+</code></pre>
+<p>where mydomain is the domain name.</p>
+<h2><a class="anchor" aria-hidden="true" id="docker-compose-sample-file"></a><a href="#docker-compose-sample-file" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Docker-Compose sample file</h2>
+<p>To use docker-compose it is required to have it installed <a href="https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/">Reference</a>.</p>
+<p>Create a container made up by  a single image using docker-compose</p>
+<pre><code class="hljs"><span class="hljs-attribute">version</span>: <span class="hljs-string">'3.3'</span>
+<span class="hljs-attribute">services</span>:
+
+# docker-compose exec service_name bash
+  <span class="hljs-attribute">service_name</span>:
+    <span class="hljs-attribute">image</span>: image-name
+    <span class="hljs-attribute">container_name</span>: thermohuman
+    <span class="hljs-attribute">volumes</span>:
+      - <span class="hljs-string">"$HOME/host_folder_name:/root/docker_folder_name"</span>
+</code></pre>
+<p>More complex docker-compose file. The latter is a sample file to run tow node.js web_servers (web_server_1 and web_server_2) using nginx as reverse proxy. Furthermore we also have a postgres_database, a portainer gui and a vscode live server.</p>
+<pre><code class="hljs"><span class="hljs-attr">version:</span> <span class="hljs-string">'3.3'</span>
+<span class="hljs-attr">services:</span>
+
+<span class="hljs-comment"># Nginx reverse proxy</span>
+<span class="hljs-attr">  nginx-reverseproxy:</span>
+<span class="hljs-attr">      image:</span> <span class="hljs-string">nginx</span>
+<span class="hljs-attr">      container_name:</span> <span class="hljs-string">nginx_reverseproxy</span>
+<span class="hljs-attr">      restart:</span> <span class="hljs-string">always</span>
+<span class="hljs-attr">      volumes:</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"/root/docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro"</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"/etc/letsencrypt/live/domain_web_server_1/privkey.pem:/etc/letsencrypt/live/domain_web_server_1/privkey.pem"</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"/etc/letsencrypt/live/domain_web_server_1/fullchain.pem:/etc/letsencrypt/live/domain_web_server_1/fullchain.pem"</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"/etc/letsencrypt/live/domain_web_server_2/privkey.pem:/etc/letsencrypt/live/domain_web_server_2/privkey.pem"</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"/etc/letsencrypt/live/domain_web_server_2/fullchain.pem:/etc/letsencrypt/live/domain_web_server_2/fullchain.pem"</span>
+<span class="hljs-attr">      ports:</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"80:80"</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"443:443"</span>
+<span class="hljs-attr">      command:</span> <span class="hljs-string">[nginx-debug,</span> <span class="hljs-string">'-g'</span><span class="hljs-string">,</span> <span class="hljs-string">'daemon off;'</span><span class="hljs-string">]</span>
+
+
+<span class="hljs-comment"># Postgres database container setup</span>
+<span class="hljs-attr">  postgres-database:</span>
+<span class="hljs-attr">    image:</span> <span class="hljs-string">postgres</span>
+<span class="hljs-attr">    container_name:</span> <span class="hljs-string">postgres_database</span>
+<span class="hljs-attr">    restart:</span> <span class="hljs-string">always</span>
+<span class="hljs-attr">    environment:</span>
+<span class="hljs-attr">      POSTGRES_USER:</span> <span class="hljs-string">postgres</span>
+<span class="hljs-attr">      POSTGRES_PASSWORD:</span> <span class="hljs-string">postgres_password</span>
+<span class="hljs-attr">    volumes:</span>
+        <span class="hljs-comment"># Entry init.sql scrip to setup the database</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql"</span> 
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"db-data:/var/lib/postgresql/data"</span>
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"5432:5432"</span>
+
+<span class="hljs-comment"># Web Server 1</span>
+<span class="hljs-attr">  web_server_1:</span>
+<span class="hljs-attr">    image:</span> <span class="hljs-string">"username/web_server_1"</span>
+<span class="hljs-attr">    container_name:</span> <span class="hljs-string">web_server_1</span>
+<span class="hljs-attr">    depends_on:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">postgres-database</span>
+<span class="hljs-attr">    volumes:</span>
+<span class="hljs-bullet">     -</span> <span class="hljs-string">"../web_server_1:/root/web_server_1"</span>
+<span class="hljs-bullet">     -</span> <span class="hljs-string">"/etc/localtime:/etc/localtime:ro"</span>
+<span class="hljs-attr">    restart:</span> <span class="hljs-string">always</span>
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">     -</span> <span class="hljs-string">"40001:80"</span>
+<span class="hljs-attr">    command:</span> <span class="hljs-string">bash</span> <span class="hljs-bullet">-c</span> <span class="hljs-string">"source /root/.bashrc &amp;&amp; cd /root/web_server_1 &amp;&amp; npm install &amp;&amp;  node index.js"</span>
+
+<span class="hljs-comment"># Web Server 2</span>
+<span class="hljs-attr">  web_server_2:</span>
+<span class="hljs-attr">    image:</span> <span class="hljs-string">"username/web_server_2"</span>
+<span class="hljs-attr">    container_name:</span> <span class="hljs-string">web_server_2</span>
+<span class="hljs-attr">    depends_on:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">postgres-database</span>
+<span class="hljs-attr">    volumes:</span>
+<span class="hljs-bullet">     -</span> <span class="hljs-string">"../web_server_2:/root/web_server_2"</span>
+<span class="hljs-bullet">     -</span> <span class="hljs-string">"/etc/localtime:/etc/localtime:ro"</span>
+<span class="hljs-attr">    restart:</span> <span class="hljs-string">always</span>
+    <span class="hljs-comment">#network_mode: "host"</span>
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">     -</span> <span class="hljs-string">"40002:80"</span>
+<span class="hljs-attr">    command:</span> <span class="hljs-string">bash</span> <span class="hljs-bullet">-c</span> <span class="hljs-string">"source /root/.bashrc &amp;&amp; cd /root/web_server_2 &amp;&amp; npm install &amp;&amp;  node index.js"</span>
+
+<span class="hljs-comment"># VSCODE Server</span>
+<span class="hljs-comment"># docker run -it --name=myide_1 --net=host -v path_to/web_server_1:/home/coder/project codercom/code-server -p 30005  --no-auth</span>
+<span class="hljs-comment"># docker run -it --name=myide_2 --net=host -v path_to/web_server_2:/home/coder/project codercom/code-server -p 30005  --no-auth</span>
+<span class="hljs-comment"># with authentication --&gt; docker run -it --net=host --name=myide  -v path_to/web_server_1:/home/coder/project codercom/code-server -p 30005</span>
+<span class="hljs-attr">  codeserver:</span>
+<span class="hljs-attr">      image:</span> <span class="hljs-string">codercom/code-server</span>
+<span class="hljs-attr">      container_name:</span> <span class="hljs-string">vscode_server</span>
+<span class="hljs-attr">      volumes:</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"../web_server_1:/home/coder/project"</span>
+        <span class="hljs-comment"># If u use https://github.com/jwilder/nginx-proxy (recommended)</span>
+        <span class="hljs-comment"># environment:</span>
+        <span class="hljs-comment"># VIRTUAL_HOST: your.domain.tld</span>
+        <span class="hljs-comment"># VIRTUAL_PORT: 8443</span>
+<span class="hljs-attr">      ports:</span>
+        <span class="hljs-comment"># With SSL</span>
+<span class="hljs-bullet">        -</span> <span class="hljs-string">"30005:30005"</span>
+        <span class="hljs-comment"># With HTTP</span>
+        <span class="hljs-comment">#- "80:8443"</span>
+<span class="hljs-attr">      command:</span> <span class="hljs-string">code-server</span> <span class="hljs-bullet">-p</span> <span class="hljs-number">30005</span>  <span class="hljs-bullet">--no-auth</span> <span class="hljs-comment"># --allow-http</span>
+      <span class="hljs-comment"># Connect via network</span>
+      <span class="hljs-comment"># networks:</span>
+      <span class="hljs-comment">#   outpost_network:</span>
+
+<span class="hljs-comment"># Portainer Server</span>
+<span class="hljs-comment"># docker volume create portainer_data</span>
+<span class="hljs-comment"># docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer</span>
+<span class="hljs-attr">  portainer-server:</span>
+<span class="hljs-attr">    image:</span> <span class="hljs-string">portainer/portainer</span>  
+<span class="hljs-attr">    container_name:</span> <span class="hljs-string">portainer_server</span>
+<span class="hljs-attr">    restart:</span> <span class="hljs-string">always</span>
+<span class="hljs-attr">    volumes:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"/var/run/docker.sock:/var/run/docker.sock"</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"portainer_data:/data_portainer"</span>
+<span class="hljs-attr">    ports:</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"8000:8000"</span>
+<span class="hljs-bullet">      -</span> <span class="hljs-string">"9000:9000"</span>
+      
+<span class="hljs-comment"># Postgres persistent volume, Portainer volume extra   </span>
+<span class="hljs-attr">volumes:</span>
+<span class="hljs-attr">  db-data:</span>
+<span class="hljs-attr">  portainer_data:</span>
+</code></pre>
+<p>nginx.conf example</p>
+<pre><code class="hljs"><span class="hljs-comment"># Useful examples</span>
+<span class="hljs-comment"># https://www.digitalocean.com/community/questions/best-way-to-configure-nginx-ssl-force-http-to-redirect-to-https-force-www-to-non-www-on-serverpilot-free-plan-by-using-nginx-configuration-file-only</span>
+
+
+<span class="hljs-comment"># Redirect http to https</span>
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span> <span class="hljs-number">80</span>;
+    <span class="hljs-attribute">server_name</span> domain_web_server_1 domain_web_server_2;
+    <span class="hljs-attribute">return</span> <span class="hljs-number">301</span> https://<span class="hljs-variable">$host</span><span class="hljs-variable">$request_uri</span>;
+}
+
+<span class="hljs-comment"># Proxy pass to http webserver_1</span>
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span>      <span class="hljs-number">443</span>  ssl;
+    <span class="hljs-attribute">listen</span> [::]:<span class="hljs-number">443</span>  ssl;
+    <span class="hljs-attribute">server_name</span> domain_web_server_1;
+
+    <span class="hljs-attribute">ssl</span> <span class="hljs-literal">on</span>;
+    <span class="hljs-attribute">ssl_certificate</span> /etc/letsencrypt/live/domain_web_server_1/fullchain.pem;
+    <span class="hljs-attribute">ssl_certificate_key</span> /etc/letsencrypt/live/domain_web_server_1/privkey.pem;
+    <span class="hljs-attribute">ssl_session_cache</span> shared:SSL:<span class="hljs-number">10m</span>;
+
+    <span class="hljs-attribute">client_max_body_size</span> <span class="hljs-number">100M</span>;
+
+    <span class="hljs-attribute">location</span> / {
+        <span class="hljs-attribute">proxy_pass</span> http://domain_web_server_1:40001;
+        <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;
+        <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;
+        <span class="hljs-attribute">proxy_buffering</span> <span class="hljs-literal">off</span>;
+    }
+}
+
+<span class="hljs-comment"># Proxy pass to http webserver_2</span>
+<span class="hljs-section">server</span> {
+    <span class="hljs-attribute">listen</span>      <span class="hljs-number">443</span> ssl;
+    <span class="hljs-attribute">listen</span> [::]:<span class="hljs-number">443</span> ssl;
+    <span class="hljs-attribute">server_name</span>  domain_web_server_2;
+
+    <span class="hljs-attribute">ssl</span> <span class="hljs-literal">on</span>;
+    <span class="hljs-attribute">ssl_certificate</span> /etc/letsencrypt/live/domain_web_server_2/fullchain.pem;
+    <span class="hljs-attribute">ssl_certificate_key</span> /etc/letsencrypt/live/domain_web_server_2/privkey.pem;
+    <span class="hljs-attribute">ssl_session_cache</span> shared:SSL:<span class="hljs-number">10m</span>;
+
+    <span class="hljs-attribute">client_max_body_size</span> <span class="hljs-number">100M</span>;
+
+    <span class="hljs-attribute">location</span> / {
+        <span class="hljs-attribute">proxy_pass</span> http://domain_web_server_2:40002;
+        <span class="hljs-attribute">proxy_set_header</span> X-Real-IP <span class="hljs-variable">$remote_addr</span>;
+        <span class="hljs-attribute">proxy_set_header</span> X-Forwarded-For <span class="hljs-variable">$proxy_add_x_forwarded_for</span>;
+        <span class="hljs-attribute">proxy_buffering</span> <span class="hljs-literal">off</span>;
+    }
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="screen-userful-commands"></a><a href="#screen-userful-commands" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Screen Userful commands</h2>
+<h1><a class="anchor" aria-hidden="true" id="screen-instructions"></a><a href="#screen-instructions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Screen instructions</h1>
+<p><a href="https://linuxize.com/post/how-to-use-linux-screen/">Reference</a></p>
+<ol>
+<li>Install screen</li>
+</ol>
+<pre><code class="hljs">sudo apt install<span class="hljs-built_in"> screen
+</span></code></pre>
+<ol start="2">
+<li>Create new screen</li>
+</ol>
+<pre><code class="hljs">screen -S cmclima_webserver<span class="hljs-built_in">
+screen </span>-S cmclima_signalingserver<span class="hljs-built_in">
+screen </span>-S cmclima_turnserver<span class="hljs-built_in">
+screen </span>-S cmclima_servers
+</code></pre>
+<ol start="3">
+<li>Attach to cmclima_webserver</li>
+</ol>
+<pre><code class="hljs">screen -r cmclima_webserver
+source <span class="hljs-variable">$HOME</span>/<span class="hljs-selector-class">.bashrc</span> &amp;&amp; cd <span class="hljs-variable">$HOME</span>/webrtc-apprtc &amp;&amp; node index<span class="hljs-selector-class">.js</span>
+</code></pre>
+<ol start="4">
+<li>Attach to cmclima_signalingserver</li>
+</ol>
+<pre><code class="hljs">screen -r cmclima_signalingserver
+cd <span class="hljs-variable">$HOME</span>/signaling-go/bin/ &amp;&amp; ./collidermain <span class="hljs-attribute">-port</span>=30003 <span class="hljs-attribute">-tls</span>=<span class="hljs-literal">true</span> <span class="hljs-attribute">-room-server</span>=<span class="hljs-string">"cmclima-vision.it:30003"</span>
+</code></pre>
+<ol start="5">
+<li>Attach to cmclima_turnserver screen</li>
+</ol>
+<pre><code class="hljs">screen -r cmclima_turnserver
+<span class="hljs-keyword">cd</span> <span class="hljs-variable">$HOME</span>/webrtc-apprtc/scripts &amp;&amp; turnserver -c  turnserver.<span class="hljs-keyword">conf</span>
+</code></pre>
+<ol start="6">
+<li>Detach from screen</li>
+</ol>
+<pre><code class="hljs">CRTL+A <span class="hljs-keyword">and</span> <span class="hljs-keyword">then</span> D
+</code></pre>
+<ol start="7">
+<li>To reattach</li>
+</ol>
+<pre><code class="hljs">screen -r cmclima_server_screen # <span class="hljs-keyword">or</span><span class="hljs-built_in">
+screen </span>-d -r cmclima_server_screen
+</code></pre>
+<ol start="8">
+<li>List active screen</li>
+</ol>
+<pre><code class="hljs"><span class="hljs-attribute">screen -ls</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="run-multiple-bash-scripts-inside-the-same-terminal"></a><a href="#run-multiple-bash-scripts-inside-the-same-terminal" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Run Multiple Bash Scripts inside the same terminal</h2>
+<pre><code class="hljs"><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># First instruction</span>
+python script1.py &amp; <span class="hljs-comment"># &amp;&gt;/dev/null &amp;</span>
+
+<span class="hljs-comment"># Second Instruction</span>
+python script2.py &amp; <span class="hljs-comment"># &amp;&gt;/dev/null &amp;</span>
+
+<span class="hljs-comment"># Third Instruction</span>
+python script3.py 
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="open-a-terminal-for-each-script"></a><a href="#open-a-terminal-for-each-script" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Open A terminal for each  script</h2>
+<pre><code class="hljs"><span class="hljs-comment">#!/bin/bash</span>
+
+<span class="hljs-comment">#---------------------------------------------------------------------------------------------</span>
+<span class="hljs-comment"># INTERNAL PROCESSES</span>
+<span class="hljs-comment">#---------------------------------------------------------------------------------------------</span>
+<span class="hljs-string">xfce4-terminal </span>\
+`<span class="hljs-comment">#---------------------------------------------------------------------------------------------` \                                          ` \</span>
+`<span class="hljs-comment">#---------------------------------------------------------------------------------------------` \</span>
+<span class="hljs-built_in">--tab</span> <span class="hljs-built_in">--title</span> <span class="hljs-string">"Terminal 1"</span> <span class="hljs-built_in">--command</span> <span class="hljs-string">"bash -c \"</span>
+<span class="hljs-string">python </span><span class="hljs-string">script1.</span><span class="hljs-string">py </span><span class="hljs-built_in">--wait;</span>
+<span class="hljs-string">exec </span><span class="hljs-string">bash\</span><span class="hljs-string">""</span>  \
+`<span class="hljs-comment">#---------------------------------------------------------------------------------------------` \                                                                   ` \</span>
+`<span class="hljs-comment">#---------------------------------------------------------------------------------------------` \</span>
+<span class="hljs-built_in">--tab</span> <span class="hljs-built_in">--title</span> <span class="hljs-string">"Terminal 2"</span>  <span class="hljs-built_in">--command</span> <span class="hljs-string">"bash -c \"</span>
+<span class="hljs-string">python </span><span class="hljs-string">script2.</span><span class="hljs-string">py </span> <span class="hljs-built_in">--wait;</span>
+<span class="hljs-string">exec </span><span class="hljs-string">bash\</span><span class="hljs-string">""</span>  \
+`<span class="hljs-comment">#---------------------------------------------------------------------------------------------` \</span>
+`<span class="hljs-comment">#---------------------------------------------------------------------------------------------` \</span>
+<span class="hljs-built_in">--tab</span> <span class="hljs-built_in">--title</span> <span class="hljs-string">"Terminal 3"</span>  <span class="hljs-built_in">--command</span> <span class="hljs-string">"bash -c \"</span>
+<span class="hljs-string">python </span><span class="hljs-string">script3.</span><span class="hljs-string">py </span> <span class="hljs-built_in">--wait;</span>
+<span class="hljs-string">exec </span><span class="hljs-string">bash\</span><span class="hljs-string">""</span> &amp; 
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation/docs/overview"><span class="arrow-prev">← </span><span>Overview</span></a><a class="docs-next button" href="/documentation/docs/face_recognition"><span>Face Recognition</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#installation-scripts-opencv-24-for-ubuntu-1804-lts">Installation Scripts Opencv 2.4 for Ubuntu 18.04 LTS</a></li><li><a href="#installation-scripts-opencv-4-for-ubuntu-1804-lts">Installation Scripts Opencv 4 for Ubuntu 18.04 LTS</a></li><li><a href="#installation-script-to-build-tensorflow-from-source">Installation Script to Build tensorflow from Source</a></li><li><a href="#installation-to-build-simpleelastix-lib">Installation to build SimpleElastix Lib</a></li><li><a href="#installation-script-qt-creator">Installation script Qt creator</a></li><li><a href="#install-docker-and-nvidia-docker-script">Install Docker and Nvidia-Docker script</a></li><li><a href="#installtion-script-lets-encrypt">Installtion Script Let's Encrypt</a></li><li><a href="#docker-compose-sample-file">Docker-Compose sample file</a></li><li><a href="#screen-userful-commands">Screen Userful commands</a></li><li><a href="#run-multiple-bash-scripts-inside-the-same-terminal">Run Multiple Bash Scripts inside the same terminal</a></li><li><a href="#open-a-terminal-for-each-script">Open A terminal for each  script</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"><img src="/documentation/img/favicon.ico" alt="Visionlab" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentation/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentation/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentation/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentation/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
