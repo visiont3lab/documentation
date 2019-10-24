@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Deep Learning Setup Guide · Visionlab</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="This is a small guide wrapping up all we have installed to set up our virtual machine."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Deep Learning Setup Guide · Visionlab"/><meta property="og:type" content="website"/><meta property="og:url" content="https://visiont3lab.github.io/documentation/"/><meta property="og:description" content="This is a small guide wrapping up all we have installed to set up our virtual machine."/><meta property="og:image" content="https://visiont3lab.github.io/documentation/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://visiont3lab.github.io/documentation/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/documentation/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css"/><link rel="alternate" type="application/atom+xml" href="https://visiont3lab.github.io/documentation/blog/atom.xml" title="Visionlab Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://visiont3lab.github.io/documentation/blog/feed.xml" title="Visionlab Blog RSS Feed"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/documentation/js/scrollSpy.js"></script><link rel="stylesheet" href="/documentation/css/main.css"/><script src="/documentation/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation/"><img class="logo" src="/documentation/img/favicon.ico" alt="Visionlab"/><h2 class="headerTitleWithLogo">Visionlab</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/documentation/docs/deep_learning_setup_guide" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/documentation/docs/docker_setup_guide" target="_self">API</a></li><li class=""><a href="/documentation/help" target="_self">Help</a></li><li class=""><a href="/documentation/blog/" target="_self">Blog</a></li><li class=""><a target="_self"></a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Installation Setup and useful scripts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Installation Setup and useful scripts</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/documentation/docs/deep_learning_setup_guide">Deep Learning Setup Guide</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/docker_setup_guide">Docker Setup Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Research</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/face_recognition">Face Recognition</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/object_detection">Object Detection</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/optical_character_recognition">Optical Character Recognition</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/photometry">Photometry</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/segmentation">Segmentation</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/streaming">Streaming</a></li><li class="navListItem"><a class="navItem" href="/documentation/docs/robotic_operating_system">Robotic Operating System</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Templates</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/website_template">Website Template</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Notes</h3><ul class=""><li class="navListItem"><a class="navItem" href="/documentation/docs/common_issues">Common Issues</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 class="postHeaderTitle">Deep Learning Setup Guide</h1></header><article><div><span><p>This is a small guide wrapping up all we have installed to set up our virtual machine.
+To be able to write this notebook check the markdown instructions available <a href="https://markdown-it.github.io/">here</a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="step-1-install-operative-system-release-ubuntu-18041-lts"></a><a href="#step-1-install-operative-system-release-ubuntu-18041-lts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Install operative system (release: Ubuntu 18.04.1 LTS)</h2>
+<p>We have installed the latest ubuntu desktop long term support (LTS)  release available.  In our case it was ubuntu 18.04.1 LTS .
+To do download the ISO image on <a href="https://www.ubuntu.com/download/desktop">this page</a>.
+Once the image is dowloaded you can pass the latter to the virtual machine or create a live usb to install ubuntu on a real pc.</p>
+<h2><a class="anchor" aria-hidden="true" id="step-2-install-nvidia-drivers-release-415"></a><a href="#step-2-install-nvidia-drivers-release-415" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Install nvidia-drivers (release: 415)</h2>
+<p>The reference link that we have used for the installation is  <a href="http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drivers-in-linux">this one</a>. But looking at <a href="https://www.nvidia.com/download/find.aspx">this website</a> we have chosen to install the nvidia-drivers 415 because we are using a GTX NVIDIA 1080 Ti on a linux 64 bit operative system. The installation steps are summarized as following:</p>
+<pre><code class="hljs">sudo apt-get purge nvidia*
+sudo<span class="hljs-built_in"> add-apt-repository </span>ppa:graphics-drivers 
+sudo apt-get update 
+sudo apt install nvidia-driver-415
+lsmod | grep nvidia  (check<span class="hljs-built_in"> if </span>the installation is fine)
+sudo reboot
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="step-3-install-cuda-release-10"></a><a href="#step-3-install-cuda-release-10" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Install cuda (release: 10)</h2>
+<p>We are going to install the cuda version associated to ubuntu 18.04.1 LTS. This is going to be cuda 10. To do this we have used this reference link.</p>
+<ol>
+<li>Go to <a href="https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1804&amp;target_type=runfilelocal">this-website</a> select Linux --&gt; x86:64 --&gt; Ubuntu --&gt; 18.04 --&gt; runfile (local) --&gt; Download</li>
+<li>Go to the Dowloads folder, open a terminal and type:<br>
+sudo sh cuda_10.0.130_410.48_linux.run</li>
+<li>While you are installing cuda it will ask you to isntall nvidia-drivers 410.28, type no becasue we have already install 415. For the rest you can accept default configuration.</li>
+<li>open the bashrc (cd &amp;&amp; vim .bashrc) and add the following lines at the end</li>
+</ol>
+<pre><code class="hljs"><span class="hljs-builtin-name">export</span> <span class="hljs-attribute">PATH</span>=/usr/local/cuda-10.0/bin${PATH:+:<span class="hljs-variable">${PATH}</span>}
+<span class="hljs-builtin-name">export</span> <span class="hljs-attribute">LD_LIBRARY_PATH</span>=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:<span class="hljs-variable">${LD_LIBRARY_PATH}</span>}
+</code></pre>
+<p>To check if cuda is installed correctly and it is running do the following (<a href="https://medium.com/@cjanze/how-to-install-tensorflow-with-gpu-support-on-ubuntu-18-04-lts-with-cuda-10-nvidia-gpu-312a693744b5">reference</a>):</p>
+<pre><code class="hljs"><span class="hljs-keyword">cd</span> ~<span class="hljs-string">/NVIDIA_CUDA-10.0_Samples</span>
+make
+<span class="hljs-keyword">cd</span> ~<span class="hljs-string">/NVIDIA_CUDA-10.0_Samples/bin/x86_64/linux/release</span>
+<span class="hljs-string">./deviceQuery</span> <span class="hljs-params">(you should see <span class="hljs-attr">Result</span> = PASS)</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="step-4-install-cudnn-release-742"></a><a href="#step-4-install-cudnn-release-742" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 4: Install cuDNN (release: 7.4.2 )</h2>
+<p>To do this you have to:</p>
+<ol>
+<li>Go to <a href="https://developer.nvidia.com/cudnn">this website</a>, then select Dowload cuDNN.</li>
+<li>You need to have an accout to download the library. You can make one it's free.</li>
+<li>Cross  I Agree To the Terms of the cuDNN Software License Agreement, then Download cuDNN v7.4.2 (Dec 14, 2018), for CUDA 10.0 and finally cuDNN Library for Linux . Your dowload will start.</li>
+<li>Follow the installation instructions related to Installing from a Tar File available <a href="https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html">here</a>. For the sake of simplicty we wrap up them here.</li>
+</ol>
+<pre><code class="hljs">sudo tar -xzvf cudnn-<span class="hljs-number">10.0</span>-linux-x64-v7.<span class="hljs-number">4.2</span>.<span class="hljs-number">24</span>.tgz.tgz
+sudo cp cuda<span class="hljs-regexp">/include/</span>cudnn.h <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/cuda/i</span>nclude
+sudo cp cuda<span class="hljs-regexp">/lib64/</span>libcudnn* <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/cuda/</span>lib64
+sudo chmod a+r <span class="hljs-regexp">/usr/</span>local<span class="hljs-regexp">/cuda/i</span>nclude<span class="hljs-regexp">/cudnn.h /u</span>sr<span class="hljs-regexp">/local/</span>cuda<span class="hljs-regexp">/lib64/</span>libcudnn*
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="step-5-set-up-python3-virtualenv"></a><a href="#step-5-set-up-python3-virtualenv" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 5: Set up python3 virtualenv</h2>
+<p>We are going to use virtual environment in dealing with python to better organize our pc.
+We wan to be able to use our pc with both python 2 and 3 and with differnt deep learning framework.
+Here are the instructions:</p>
+<pre><code class="hljs">sudo apt <span class="hljs-keyword">install</span> python3-pip (<span class="hljs-keyword">install</span> pip3)
+sudo -H pip3 <span class="hljs-keyword">install</span> virtualenv (<span class="hljs-keyword">install</span> virtualenv)
+which python3 (location python3 installation)
+sudo -H pip3 <span class="hljs-keyword">install</span> virtualenvwrapper (<span class="hljs-keyword">install</span> <span class="hljs-keyword">virtual</span> environmnet wrapper)
+cd &amp;&amp; vim .bashrc <span class="hljs-comment">--&gt; open bashrc  </span>
+
+<span class="hljs-keyword">add</span> the <span class="hljs-keyword">following</span> <span class="hljs-keyword">lines</span> <span class="hljs-keyword">at</span> the <span class="hljs-keyword">end</span>:
+VIRTUALENVWRAPPER_PYTHON=<span class="hljs-string">'/usr/bin/python3'</span> <span class="hljs-comment"># Note this has to be the output of which python3</span>
+
+<span class="hljs-keyword">source</span> /usr/<span class="hljs-keyword">local</span>/<span class="hljs-keyword">bin</span>/virtualenvwrapper.sh
+<span class="hljs-keyword">export</span> WORKON_HOME=$HOME/.virtualenvs
+cd &amp;&amp; mkdir ~/.virtualenvs &amp;&amp; <span class="hljs-keyword">source</span> ~/.bashrc
+
+</code></pre>
+<p>Now let's create a python3 and python2 virtual environments:
+The following command will create and automatically activate the environments.</p>
+<pre><code class="hljs"><span class="hljs-keyword">cd</span> &amp;&amp; mkvirtualenv <span class="hljs-keyword">python3</span>-virtualenv
+sudo apt install <span class="hljs-keyword">python</span>-minimal (will install <span class="hljs-keyword">python</span> <span class="hljs-number">2.7</span>)
+<span class="hljs-keyword">cd</span> &amp;&amp; mkvirtualenv --<span class="hljs-keyword">python</span>=python2 python2-virtualenv
+lsvirtualenv <span class="hljs-built_in">or</span> $ <span class="hljs-keyword">ls</span> $WORKON_HOME(<span class="hljs-keyword">list</span> <span class="hljs-keyword">all</span> the virtual environments) 
+workon <span class="hljs-keyword">python3</span>-env (will activate the environment)
+deactivate (deactivate the running environment)
+rmvirtualenv <span class="hljs-keyword">python3</span>-virtualenv (<span class="hljs-built_in">remove</span> virtual environment)
+cpvirtualenv ENVNAME [TARGETENVNAME] (<span class="hljs-keyword">copy</span> the environment)
+
+</code></pre>
+<p>More information are available <a href="https://gist.github.com/IamAdiSri/a379c36b70044725a85a1216e7ee9a46">here</a>.
+All the virtual environments are located inside  ~/.virtualenvs more information on the commands line related to virtualenv and virtualwrapper can be found respectively <a href="https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html">here-virtualenv</a> and <a href="https://virtualenvwrapper.readthedocs.io/en/latest/">here-virtualwrapper</a>.</p>
+<p>Let's focus on python3 virtual environment previously created and let's install all the required library to start dealign with computer vision and deep learning.</p>
+<pre><code class="hljs">lsvirtualenv (<span class="hljs-keyword">list</span> <span class="hljs-keyword">all</span> created environments)
+workon <span class="hljs-keyword">python3</span>-virtualenv
+pip3 install numpy scipy pandas matplotlib scikit-learn  opencv-<span class="hljs-keyword">python</span> tensorflow-gpu==<span class="hljs-number">1.13</span>.<span class="hljs-number">0</span>-rc1
+pip3 <span class="hljs-keyword">list</span> (<span class="hljs-keyword">list</span> <span class="hljs-keyword">all</span> installed library)
+<span class="hljs-keyword">python</span> -<span class="hljs-keyword">c</span> <span class="hljs-string">"import keras; import tensorflow as tf; print(tf.GIT_VERSION, tf.VERSION)"</span>  # check <span class="hljs-keyword">if</span> tensorflow <span class="hljs-keyword">is</span> working
+</code></pre>
+<p>Note that you will have installed opencv-python cpu version. If you need the gpu you need to compile it</p>
+<h2><a class="anchor" aria-hidden="true" id="extra-1-install-opencv-gpu-from-source"></a><a href="#extra-1-install-opencv-gpu-from-source" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extra 1:  Install  OpenCV GPU from source</h2>
+<p>Useful reference <a href="https://www.learnopencv.com/install-opencv-4-on-ubuntu-18-04/">link</a>.</p>
+<pre><code class="hljs">sudo apt -y remove x264 libx264-dev
+sudo apt -y <span class="hljs-keyword">install</span> <span class="hljs-keyword">build</span>-essential checkinstall cmake pkg-config yasm
+sudo apt -y <span class="hljs-keyword">install</span> git gfortran
+sudo apt -y <span class="hljs-keyword">install</span> libjpeg8-dev libpng-dev
+sudo apt -y <span class="hljs-keyword">install</span> software-properties-common
+sudo <span class="hljs-keyword">add</span>-apt-repository <span class="hljs-string">"deb http://security.ubuntu.com/ubuntu xenial-security main"</span>
+sudo apt -y <span class="hljs-keyword">update</span>
+sudo apt -y <span class="hljs-keyword">install</span> libjasper1
+sudo apt -y <span class="hljs-keyword">install</span> libtiff-dev
+sudo apt -y <span class="hljs-keyword">install</span> libavcodec-dev libavformat-dev libswscale-dev libdc1394<span class="hljs-number">-22</span>-dev
+sudo apt -y <span class="hljs-keyword">install</span> libxine2-dev libv4l-dev
+cd /usr/<span class="hljs-keyword">include</span>/linux
+sudo <span class="hljs-keyword">ln</span> -s -f ../libv4l1-videodev.h videodev.h
+sudo apt -y <span class="hljs-keyword">install</span> libgstreamer1<span class="hljs-number">.0</span>-dev libgstreamer-plugins-base1<span class="hljs-number">.0</span>-dev
+sudo apt -y <span class="hljs-keyword">install</span> libgtk2<span class="hljs-number">.0</span>-dev libtbb-dev qt5-<span class="hljs-keyword">default</span>
+sudo apt -y <span class="hljs-keyword">install</span> libatlas-base-dev
+sudo apt -y <span class="hljs-keyword">install</span> libfaac-dev libmp3lame-dev libtheora-dev
+sudo apt -y <span class="hljs-keyword">install</span> libvorbis-dev libxvidcore-dev
+sudo apt -y <span class="hljs-keyword">install</span> libopencore-amrnb-dev libopencore-amrwb-dev
+sudo apt -y <span class="hljs-keyword">install</span> libavresample-dev
+sudo apt -y <span class="hljs-keyword">install</span> x264 v4l-utils
+sudo apt -y <span class="hljs-keyword">install</span> libprotobuf-dev protobuf-compiler
+sudo apt -y <span class="hljs-keyword">install</span> libgoogle-glog-dev libgflags-dev
+sudo apt -y <span class="hljs-keyword">install</span> libgphoto2-dev libeigen3-dev libhdf5-dev doxygen
+sudo apt <span class="hljs-keyword">install</span> libcanberra-gtk-<span class="hljs-keyword">module</span> libcanberra-gtk3-<span class="hljs-keyword">module</span>
+$ git <span class="hljs-keyword">clone</span> https://github.com/opencv/opencv.git
+$ mkdir <span class="hljs-keyword">build</span> &amp;&amp; cd <span class="hljs-keyword">build</span>
+$ cmake -DCMAKE_BUILD_TYPE=<span class="hljs-keyword">Release</span> -DCMAKE_INSTALL_PREFIX=/usr/<span class="hljs-keyword">local</span> -DBUILD_PNG=<span class="hljs-keyword">OFF</span> -DBUILD_TIFF=<span class="hljs-keyword">OFF</span> -DBUILD_TBB=<span class="hljs-keyword">OFF</span> -DBUILD_JPEG=<span class="hljs-keyword">OFF</span> -DBUILD_JASPER=<span class="hljs-keyword">OFF</span> -DBUILD_ZLIB=<span class="hljs-keyword">OFF</span> -DBUILD_EXAMPLES=<span class="hljs-keyword">OFF</span> -DBUILD_opencv_java=<span class="hljs-keyword">OFF</span> -DBUILD_opencv_python2=<span class="hljs-keyword">ON</span> -DBUILD_opencv_python3=<span class="hljs-keyword">ON</span> -DWITH_V4L=<span class="hljs-keyword">ON</span> -DWITH_OPENGL=<span class="hljs-keyword">ON</span> -DWITH_OPENCL=<span class="hljs-keyword">OFF</span> -DWITH_OPENMP=<span class="hljs-keyword">OFF</span> -DWITH_FFMPEG=<span class="hljs-keyword">ON</span> -DWITH_GSTREAMER=<span class="hljs-keyword">OFF</span> -DWITH_GSTREAMER_0_10=<span class="hljs-keyword">OFF</span> -DWITH_CUDA=<span class="hljs-keyword">ON</span> -DWITH_NVCUVID=<span class="hljs-keyword">OFF</span> -DWITH_GTK=<span class="hljs-keyword">ON</span> -DWITH_VTK=<span class="hljs-keyword">OFF</span> -DWITH_TBB=<span class="hljs-keyword">ON</span> -DWITH_1394=<span class="hljs-keyword">OFF</span> -DWITH_OPENEXR=<span class="hljs-keyword">OFF</span> -DCUDA_TOOLKIT_ROOT_DIR=/usr/<span class="hljs-keyword">local</span>/cuda<span class="hljs-number">-10.0</span> -DCUDA_ARCH_BIN=<span class="hljs-string">'3.0 3.5 5.0 6.0 6.2'</span> -DCUDA_ARCH_PTX=<span class="hljs-string">""</span> -DINSTALL_C_EXAMPLES=<span class="hljs-keyword">OFF</span> -DINSTALL_TESTS=<span class="hljs-keyword">OFF</span> -DINSTALL_PYTHON_EXAMPLES=<span class="hljs-keyword">OFF</span> -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..sudo 
+$ make -j4
+$ sudo make <span class="hljs-keyword">install</span>
+</code></pre>
+<p>Install  OpenCV-GPU (version: 4.0.1-dev)</p>
+<pre><code class="hljs">cp $HOME/<span class="hljs-class"><span class="hljs-keyword">lib</span>/<span class="hljs-title">opencv</span>/<span class="hljs-title">build</span>/<span class="hljs-title">lib</span>/<span class="hljs-title">python3</span>/<span class="hljs-title">cv2</span>.<span class="hljs-title">cpython</span>-36<span class="hljs-title">m</span>-<span class="hljs-title">x86_64</span>-<span class="hljs-title">linux</span>-<span class="hljs-title">gnu</span>.<span class="hljs-title">so</span> $<span class="hljs-title">HOME</span>/.<span class="hljs-title">virtualenvs</span>/<span class="hljs-title">my</span>-<span class="hljs-title">python3</span>-<span class="hljs-title">env</span>/<span class="hljs-title">lib</span>/<span class="hljs-title">python3</span>.6/<span class="hljs-title">site</span>-<span class="hljs-title">packages</span>/<span class="hljs-title">cv2</span>.<span class="hljs-title">so</span></span>
+python -c <span class="hljs-string">"import cv2; print(cv2.__version__); print(cv2.getBuildInformation())"</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="extra-2-install-dlib-gpu-from-source"></a><a href="#extra-2-install-dlib-gpu-from-source" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extra 2: Install Dlib GPU from source</h2>
+<p>The reference link is <a href="https://stackoverflow.com/questions/51697468/how-to-check-if-dlib-is-using-gpu-or-not">this</a>. The official dlib repository is <a href="https://github.com/davisking/dlib">this one</a></p>
+<pre><code class="hljs">We are running gcc (Ubuntu <span class="hljs-number">7.3</span>.<span class="hljs-number">0</span>-<span class="hljs-number">27</span>ubuntu1~<span class="hljs-number">18.04</span>) <span class="hljs-number">7.3</span>.<span class="hljs-number">0</span> (gcc --<span class="hljs-keyword">version</span>)
+sudo apt-<span class="hljs-built_in">get</span> install libx11-dev libblas-dev
+git clone http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/davisking/dlib.git
+<span class="hljs-keyword">cd</span> dlib
+<span class="hljs-built_in">mkdir</span> build
+<span class="hljs-keyword">cd</span> build
+cmake ..
+cmake --build . --config Release
+
+To <span class="hljs-keyword">be</span> able <span class="hljs-keyword">to</span> use dlib gpu inside <span class="hljs-keyword">a</span> virtual environment you have <span class="hljs-keyword">to</span> <span class="hljs-keyword">do</span> thi<span class="hljs-variable">s:</span>
+<span class="hljs-keyword">cd</span> ~/lib/dlib
+workon <span class="hljs-keyword">python3</span>-virtualenv 
+<span class="hljs-keyword">python3</span> setup.<span class="hljs-keyword">py</span> install --yes USE_AVX_INSTRUCTIONS --yes DLIB_USE_CUDA
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/documentation/docs/docker_setup_guide"><span>Docker Setup Guide</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#step-1-install-operative-system-release-ubuntu-18041-lts">Step 1: Install operative system (release: Ubuntu 18.04.1 LTS)</a></li><li><a href="#step-2-install-nvidia-drivers-release-415">Step 2: Install nvidia-drivers (release: 415)</a></li><li><a href="#step-3-install-cuda-release-10">Step 3: Install cuda (release: 10)</a></li><li><a href="#step-4-install-cudnn-release-742">Step 4: Install cuDNN (release: 7.4.2 )</a></li><li><a href="#step-5-set-up-python3-virtualenv">Step 5: Set up python3 virtualenv</a></li><li><a href="#extra-1-install-opencv-gpu-from-source">Extra 1:  Install  OpenCV GPU from source</a></li><li><a href="#extra-2-install-dlib-gpu-from-source">Extra 2: Install Dlib GPU from source</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation/" class="nav-home"><img src="/documentation/img/favicon.ico" alt="Visionlab" width="66" height="58"/></a><div><h5>Docs</h5><a href="/documentation/docs/en/doc1.html">Getting Started (or other categories)</a><a href="/documentation/docs/en/doc2.html">Guides (or other categories)</a><a href="/documentation/docs/en/doc3.html">API Reference (or other categories)</a></div><div><h5>Community</h5><a href="/documentation/en/users.html">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Your Name or Your Company Name</section></footer></div></body></html>
