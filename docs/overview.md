@@ -228,6 +228,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [python models for deep learning](https://github.com/GoogleCloudPlatform/keras-idiomatic-programmer/tree/master/zoo) [_to must to see_]  
 
 ## Acellerate with FPGA:
+- [FPGA-Python custom git](https://github.com/ZFTurbo/MobileNet-in-FPGA) [FPGA]  
 - [FPGA-Python custom -Verilog](http://www.innovatefpga.com/cgi-bin/innovate/teams.pl?Id=EM031) [FPGA]  
 - [LE-Flow- BLOG](https://www.nextplatform.com/2018/07/24/clearing-the-tensorflow-to-fpga-path/) [FPGA_] 
 - [LE-Flow TF to FPGA](https://github.com/danielholanda/LeFlow/tree/master/examples) [_FPGA]  
