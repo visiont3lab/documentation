@@ -2,7 +2,7 @@
 id: deep_learning_setup_guide
 title: Deep Learning Setup Guide
 sidebar_label: Deep Learning Setup Guide
-custom_edit_url: https://github.com/facebook/docusaurus/edit/master/docs/api-doc-markdown.md
+custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/deep_learning_setup_guide.md
 ---
 
 This is a small guide wrapping up all we have installed to set up our virtual machine.

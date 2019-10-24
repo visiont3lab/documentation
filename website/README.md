@@ -191,3 +191,14 @@ For more information about custom pages, click [here](https://docusaurus.io/docs
 # Full Documentation
 
 Full documentation can be found on the [website](https://docusaurus.io/).
+
+
+# Deploy using github
+
+[Reference](https://docusaurus.io/docs/en/tutorial-publish-site)
+
+```
+cd documentation/website
+npm run build
+GIT_USER=visiont3lab CURRENT_BRANCH=master npm run publish-gh-pages
+```

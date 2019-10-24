@@ -23,18 +23,23 @@ const users = [
 const siteConfig = {
   title: 'Visionlab', // Title for your website.
   tagline: 'Follow us in our research!',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
+  
 
-  // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 't3lab',
+  url: 'https://visiont3lab.github.io', // Replace USERNAME with your GitHub username.
+  baseUrl: '/documentation/', // The name of your GitHub project.
+  projectName: 'documentation',  // The name of your GitHub project. Same as above.
+  organizationName: 'visiont3lab', // Your GitHub username.
+
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
+
+  /*algolia: {
+    apiKey: 'my-api-key',
+    indexName: 'my-index-name',
+    algoliaOptions: {}, // Optional, if provided by Algolia
+    placeholder: 'Ask me something'
+  },  */
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
@@ -42,9 +47,10 @@ const siteConfig = {
     {doc: 'docker_setup_guide', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
-    {search: true },
-    { languages: true }
+    {search: true }
   ],
+
+ 
 
   disableTitleTagLine: true,
   scrollToTop: true,
