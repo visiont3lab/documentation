@@ -9,7 +9,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
 
-
 ## Distillation:
 - [Disttilation GitHub](https://github.com/dkozlov/awesome-knowledge-distillation) [_comment_]  
 - [Disttilation Pytorch](https://github.com/NervanaSystems/distiller) [_comment_]  
@@ -25,11 +24,13 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
 ## Varie:
+- [Keras.js-online-app](https://transcranial.github.io/keras-js/#/mnist-cnn) [to copy]  
 - [REACT_CCTV](https://dev.to/graphtylove/how-to-automate-attendance-record-with-face-recognition-python-and-react-4413?fbclid=IwAR0UbGQ9p_SHhFyO6Dr3KHRVsqTfRMboPAOMqPWIjKPqO4Rs0hi2cQfrcsQ
 ) [_GOOD_]  
 - [streamlit](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace) [_comment_]  
 - [COLAB DEEP LEARNING ADVANCED](https://github.com/tugstugi/dl-colab-notebooks) [GOOD]  
 - [Deep Learning in Medical AI 2018/2019](https://github.com/tensorflow/tensorboard/tree/master/docs) [_comment_]  
+- [DetectionSuite's for vision-all dataset test](https://www.youtube.com/watch?v=DpK5gqwoSBc) [very good]  
 - [ALBUMENTATION](https://github.com/albu/albumentations) [LIBRARY COMPUTER_VISION_]  
 - [GOD-GITHUB](https://github.com/JdeRobot/neuralFPGA) [_comment_] 
 - [GOD-YOUTUBE](https://www.youtube.com/watch?v=KFrEPCOA0p4&list=PLgB5c9xg9C91DJ30WFlHfHAhMECeho-gU&index=2) [_comment_] 
@@ -47,9 +48,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Pynq
 - [cv2-pynq](https://www.youtube.com/watch?v=nRxe-NqvOl8) [_comment_]  
-
-## XXX
-- [xxxxx](https://site) [_comment_]  
 
 ## Dataset from Oxford
 - [best dataset image-video-text](http://www.robots.ox.ac.uk/~vgg/data/) [_comment_]  
@@ -230,6 +228,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [python models for deep learning](https://github.com/GoogleCloudPlatform/keras-idiomatic-programmer/tree/master/zoo) [_to must to see_]  
 
 ## Acellerate with FPGA:
+- [FPGA-Python custom git](https://github.com/ZFTurbo/MobileNet-in-FPGA) [FPGA]  
 - [FPGA-Python custom -Verilog](http://www.innovatefpga.com/cgi-bin/innovate/teams.pl?Id=EM031) [FPGA]  
 - [LE-Flow- BLOG](https://www.nextplatform.com/2018/07/24/clearing-the-tensorflow-to-fpga-path/) [FPGA_] 
 - [LE-Flow TF to FPGA](https://github.com/danielholanda/LeFlow/tree/master/examples) [_FPGA]  
