@@ -37,6 +37,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## style transfer:
 - [_style transfer](https://github.com/tensorflow/lucid) [good-colab]  
+- [style transfer](https://towardsdatascience.com/real-time-video-neural-style-transfer-9f6f84590832) [realtime]  
 
 ## DESCRIBE IMAGES:
 - [PYTORCH DESCRIBE IMAGES](https://github.com/fawazsammani/look-and-modify/blob/master/README.md) [_comment_] 
