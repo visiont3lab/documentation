@@ -35,6 +35,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [GOD-GITHUB](https://github.com/JdeRobot/neuralFPGA) [_comment_] 
 - [GOD-YOUTUBE](https://www.youtube.com/watch?v=KFrEPCOA0p4&list=PLgB5c9xg9C91DJ30WFlHfHAhMECeho-gU&index=2) [_comment_] 
 
+## style transfer:
+- [_style transfer](https://github.com/tensorflow/lucid) [good-colab]  
+
 ## DESCRIBE IMAGES:
 - [PYTORCH DESCRIBE IMAGES](https://github.com/fawazsammani/look-and-modify/blob/master/README.md) [_comment_] 
 - [PYTORCH](https://github.com/fawazsammani/knowing-when-to-look-adaptive-attention) [_comment_]  
