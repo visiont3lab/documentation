@@ -36,6 +36,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [GOD-YOUTUBE](https://www.youtube.com/watch?v=KFrEPCOA0p4&list=PLgB5c9xg9C91DJ30WFlHfHAhMECeho-gU&index=2) [_comment_] 
 
 ## style transfer:
+- [style transfer](https://github.com/ShafeenTejani/fast-style-transfer) [tensorflow]  
 - [_style transfer](https://github.com/tensorflow/lucid) [good-colab]  
 - [style transfer](https://towardsdatascience.com/real-time-video-neural-style-transfer-9f6f84590832) [realtime]  
 
