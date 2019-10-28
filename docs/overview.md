@@ -25,7 +25,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Varie:
 - [Keras.js-online-app](https://transcranial.github.io/keras-js/#/mnist-cnn) [to copy]  
-- [Jetson Deepstream](https://www.hackster.io/pjdecarlo/nvidia-deepstream-integration-with-azure-iot-central-d9f834) [__]  
+- [Jetson Deepstream](https://www.hackster.io/pjdecarlo/nvidia-deepstream-integration-with-azure-iot-central-d9f834) [__]
+- [Jetson Azure-CCTV Yolo](https://www.hackster.io/pjdecarlo/intelligent-closed-circuit-tv-with-azure-and-nvidia-jetson-6df06f) [jetson]  
 - [REACT_CCTV](https://dev.to/graphtylove/how-to-automate-attendance-record-with-face-recognition-python-and-react-4413?fbclid=IwAR0UbGQ9p_SHhFyO6Dr3KHRVsqTfRMboPAOMqPWIjKPqO4Rs0hi2cQfrcsQ) [_GOOD_]  
 - [streamlit](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace) [_comment_]  
 - [COLAB DEEP LEARNING ADVANCED](https://github.com/tugstugi/dl-colab-notebooks) [GOOD]  
