@@ -9,7 +9,12 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
 
-## Distillation:
+## Pruning/Distillation:
+- [Pytorch](https://forums.fast.ai/t/model-pruning-in-fast-ai/49832) [_comment_]  
+- [Pruning](https://towardsdatascience.com/pruning-deep-neural-network-56cae1ec5505) [_comment_] 
+- [Tensorflow](https://github.com/rootally/Pruning-in-Neural-Network/blob/master/script.ipynb) [_comment_]  
+- [Pytorch](https://jacobgil.github.io/deeplearning/pruning-deep-learning) [_comment_]  
+
 - [Disttilation GitHub](https://github.com/dkozlov/awesome-knowledge-distillation) [_comment_]  
 - [Disttilation Pytorch](https://github.com/NervanaSystems/distiller) [_comment_]  
 
