@@ -21,6 +21,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Kubernetes:
 - [MicroK8s](https://thenewstack.io/deploy-a-single-node-kubernetes-instance-in-seconds-with-microk8s/) [_comment_]  
 
+## Tutorial:
+- [Dive into Deep Learning](https://d2l.ai/) [good]  
+
 ## Jetson:
 - [OpenCv Jetson+camera usb](https://thenewstack.io/tutorial-configure-nvidia-jetson-nano-as-an-ai-testbed/) [_comment_]  
 
