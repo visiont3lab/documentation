@@ -38,6 +38,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
 ## Varie:
+- [Augmentation](https://github.com/aleju/imgaug#code_examples) [_comment_]  
 
 - [Gest recognition -TVM -Pytorch-ONNX - JetsonNano](https://github.com/mit-han-lab/temporal-shift-module/tree/master/online_demo) [_comment_]  
 - [Keras.js-online-app](https://transcranial.github.io/keras-js/#/mnist-cnn) [to copy]  
