@@ -26,7 +26,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [MicroK8s](https://thenewstack.io/deploy-a-single-node-kubernetes-instance-in-seconds-with-microk8s/) [_comment_]  
 
 ## Tutorial:
-- [Start with weka](https://www.futurelearn.com/courses/data-mining-with-weka)
+- [Advanced Weka](https://www.futurelearn.com/courses/advanced-data-mining-with-weka)
+- [another Weka](https://www.futurelearn.com/courses/more-data-mining-with-weka)
+- [Start with Weka](https://www.futurelearn.com/courses/data-mining-with-weka)
 - [Practical Deep-learning for coders](https://course.fast.ai/) [_comment_] 
 - [pytorch-Beginner](http://seba1511.net/tutorials/beginner/deep_learning_60min_blitz.html) [_comment_]  
 - [Dive into Deep Learning](https://d2l.ai/) [good]  
