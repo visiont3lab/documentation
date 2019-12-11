@@ -41,6 +41,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
 ## Varie:
+- [Lego+AI](https://towardsdatascience.com/a-high-speed-computer-vision-pipeline-for-the-universal-lego-sorting-machine-253f5a690ef4) [_comment_]  
 - [Conditioning Neural Networks](https://towardsdatascience.com/conditional-love-the-rise-of-renormalization-techniques-for-neural-network-conditioning-14350cb10a34) [_comment_]  
 - [Retina-Net](https://towardsdatascience.com/review-retinanet-focal-loss-object-detection-38fba6afabe4)
 - [Teachable machine](https://teachablemachine.withgoogle.com/train/image) [_comment_]  
