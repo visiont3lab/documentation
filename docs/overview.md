@@ -40,9 +40,13 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [CINECA SUMMER PARALLEL MPI4py](https://hpc-forge.cineca.it/files/ScuolaCalcoloParallelo_WebDAV/public/anno-2017/26th_Summer_School_on_Parallel_Computing/Bologna/) [_comment_] 
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
+## Android:
+- [TF-Lite to (Pb) --> COREML or ONNX](https://blog.xmartlabs.com/2019/11/22/TFlite-to-CoreML/) [_comment_]  
+- [TFlite-Object-detection-custom-quantize](https://site) [_comment_]  
+- [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
+
 ## Varie:
 - [CycleGAN-Art](https://arxiv.org/pdf/1703.10593.pdf) [_comment_]  
-- [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 - [ONNX-online classificator](https://microsoft.github.io/onnxjs-demo/#/squeezenet) [_comment_]  
 - [Lego+AI](https://towardsdatascience.com/a-high-speed-computer-vision-pipeline-for-the-universal-lego-sorting-machine-253f5a690ef4) [_comment_]  
 - [Conditioning Neural Networks](https://towardsdatascience.com/conditional-love-the-rise-of-renormalization-techniques-for-neural-network-conditioning-14350cb10a34) [_comment_]  
