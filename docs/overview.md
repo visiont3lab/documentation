@@ -41,7 +41,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
 ## Varie:
-
+- [CycleGAN-Art](https://arxiv.org/pdf/1703.10593.pdf) [_comment_]  
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 - [ONNX-online classificator](https://microsoft.github.io/onnxjs-demo/#/squeezenet) [_comment_]  
 - [Lego+AI](https://towardsdatascience.com/a-high-speed-computer-vision-pipeline-for-the-universal-lego-sorting-machine-253f5a690ef4) [_comment_]  
