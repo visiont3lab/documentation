@@ -42,7 +42,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Android:
 - [TF-Lite to (Pb) --> COREML or ONNX](https://blog.xmartlabs.com/2019/11/22/TFlite-to-CoreML/) [_comment_]  
-- [TFlite-Object-detection-custom-quantize](https://site) [_comment_]  
+- [TFlite-Object-detection-custom-quantize](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi) [_comment_]  
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 
 ## Varie:
