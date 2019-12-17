@@ -36,11 +36,14 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Jetson:
 - [OpenCv Jetson+camera usb](https://thenewstack.io/tutorial-configure-nvidia-jetson-nano-as-an-ai-testbed/) [_comment_]  
 
-## Parallel Thread MPI4py:
-- [CINECA SUMMER PARALLEL MPI4py](https://hpc-forge.cineca.it/files/ScuolaCalcoloParallelo_WebDAV/public/anno-2017/26th_Summer_School_on_Parallel_Computing/Bologna/) [_comment_] 
-- [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
+## ONNX:
+- [xxxxx](https://site) [_comment_]  
+
 
 ## Android:
+
+- [project TFlite-Android iOS](https://site) [_comment_]  
+
 - [TF-Lite to (Pb) --> COREML or ONNX](https://blog.xmartlabs.com/2019/11/22/TFlite-to-CoreML/) [_comment_]  
 - [TFlite-Object-detection-custom-quantize](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi) [_comment_]  
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
@@ -65,6 +68,10 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [ALBUMENTATION](https://github.com/albu/albumentations) [LIBRARY COMPUTER_VISION_]  
 - [GOD-GITHUB](https://github.com/JdeRobot/neuralFPGA) [_comment_] 
 - [GOD-YOUTUBE](https://www.youtube.com/watch?v=KFrEPCOA0p4&list=PLgB5c9xg9C91DJ30WFlHfHAhMECeho-gU&index=2) [_comment_] 
+
+## Parallel Thread MPI4py:
+- [CINECA SUMMER PARALLEL MPI4py](https://hpc-forge.cineca.it/files/ScuolaCalcoloParallelo_WebDAV/public/anno-2017/26th_Summer_School_on_Parallel_Computing/Bologna/) [_comment_] 
+- [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
 ## style transfer:
 - [fastphotostyle](https://github.com/NVIDIA/FastPhotoStyle) [_style transfer] 
