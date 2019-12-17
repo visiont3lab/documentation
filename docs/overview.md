@@ -14,6 +14,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [pytorch-arm-builds-raspberry3b+](https://github.com/nmilosev/pytorch-arm-builds/) [_comment_]  
 
 ## Pruning/Distillation:
+- [NN Distiller](https://nervanasystems.github.io/distiller/install.html) [_comment_]  
+
 - [Pytorch](https://forums.fast.ai/t/model-pruning-in-fast-ai/49832) [_comment_]  
 - [Pruning](https://towardsdatascience.com/pruning-deep-neural-network-56cae1ec5505) [_comment_] 
 - [Tensorflow](https://github.com/rootally/Pruning-in-Neural-Network/blob/master/script.ipynb) [_comment_]  
