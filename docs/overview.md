@@ -40,7 +40,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## ONNX:
 - [ONNX-WINMLTools-Quantization](https://docs.microsoft.com/it-it/windows/ai/windows-ml/convert-model-winmltools) [_comment_]  
-
 ## Android:
 - [project TFlite-Android iOS](https://www.tensorflow.org/lite/examples) [_comment_]  
 - [TF-Lite to (Pb) --> COREML or ONNX](https://blog.xmartlabs.com/2019/11/22/TFlite-to-CoreML/) [_comment_]  
@@ -48,6 +47,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 
 ## Varie:
+- [GAUGAN](http://nvidia-research-mingyuliu.com/gaugan) [_comment_]  
 - [CycleGAN-Art](https://arxiv.org/pdf/1703.10593.pdf) [_comment_]  
 - [ONNX-online classificator](https://microsoft.github.io/onnxjs-demo/#/squeezenet) [_comment_]  
 - [Lego+AI](https://towardsdatascience.com/a-high-speed-computer-vision-pipeline-for-the-universal-lego-sorting-machine-253f5a690ef4) [_comment_]  
