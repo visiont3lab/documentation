@@ -37,11 +37,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [OpenCv Jetson+camera usb](https://thenewstack.io/tutorial-configure-nvidia-jetson-nano-as-an-ai-testbed/) [_comment_]  
 
 ## ONNX:
-- [xxxxx](https://site) [_comment_]  
-
+- [ONNX-WINMLTools-Quantization](https://docs.microsoft.com/it-it/windows/ai/windows-ml/convert-model-winmltools) [_comment_]  
 
 ## Android:
-
 - [project TFlite-Android iOS](https://www.tensorflow.org/lite/examples) [_comment_]  
 - [TF-Lite to (Pb) --> COREML or ONNX](https://blog.xmartlabs.com/2019/11/22/TFlite-to-CoreML/) [_comment_]  
 - [TFlite-Object-detection-custom-quantize](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi) [_comment_]  
