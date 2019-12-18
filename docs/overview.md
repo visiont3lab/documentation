@@ -49,6 +49,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [TFlite-Object-detection-custom-quantize](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi) [_comment_]  
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 
+## MXNET:
+- [pytorch 2 MXNET](https://medium.com/apache-mxnet/mxnet-for-pytorch-users-in-10-minutes-a7353863406a) [_comment_]  
+
 ## Varie:
 - [GAUGAN](http://nvidia-research-mingyuliu.com/gaugan) [_comment_]  
 - [CycleGAN-Art](https://arxiv.org/pdf/1703.10593.pdf) [_comment_]  
