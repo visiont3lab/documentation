@@ -10,8 +10,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
 
-## Cross Compilation:
-- [pytorch-arm-builds-raspberry3b+](https://github.com/nmilosev/pytorch-arm-builds/) [_comment_]  
+## Vision:
+- [Vision](https://visionappster.com/visionappster.html) [_comment_]  
 
 ## Pruning/Distillation:
 - [NN Distiller](https://nervanasystems.github.io/distiller/install.html) [_comment_]  
@@ -34,6 +34,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Practical Deep-learning for coders](https://course.fast.ai/) [_comment_] 
 - [pytorch-Beginner](http://seba1511.net/tutorials/beginner/deep_learning_60min_blitz.html) [_comment_]  
 - [Dive into Deep Learning](https://d2l.ai/) [good]  
+
+## Cross Compilation:
+- [pytorch-arm-builds-raspberry3b+](https://github.com/nmilosev/pytorch-arm-builds/) [_comment_]  
 
 ## Jetson:
 - [OpenCv Jetson+camera usb](https://thenewstack.io/tutorial-configure-nvidia-jetson-nano-as-an-ai-testbed/) [_comment_]  
