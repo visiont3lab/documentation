@@ -15,7 +15,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Pruning/Distillation:
 - [NN Distiller](https://nervanasystems.github.io/distiller/install.html) [_comment_]  
-
 - [Pytorch](https://forums.fast.ai/t/model-pruning-in-fast-ai/49832) [_comment_]  
 - [Pruning](https://towardsdatascience.com/pruning-deep-neural-network-56cae1ec5505) [_comment_] 
 - [Tensorflow](https://github.com/rootally/Pruning-in-Neural-Network/blob/master/script.ipynb) [_comment_]  
@@ -28,6 +27,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [MicroK8s](https://thenewstack.io/deploy-a-single-node-kubernetes-instance-in-seconds-with-microk8s/) [_comment_]  
 
 ## Tutorial:
+- [MIT AI - 2019](https://www.newworldai.com/mit-6-s191-introduction-deep-learning-new-2019-edition/) [_comment_]  
 - [Advanced Weka](https://www.futurelearn.com/courses/advanced-data-mining-with-weka)
 - [another Weka](https://www.futurelearn.com/courses/more-data-mining-with-weka)
 - [Start with Weka](https://www.futurelearn.com/courses/data-mining-with-weka)
