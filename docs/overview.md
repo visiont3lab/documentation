@@ -45,7 +45,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [ONNX-WINMLTools-Quantization](https://docs.microsoft.com/it-it/windows/ai/windows-ml/convert-model-winmltools) [_comment_] 
 - [ONNX-remote REST](https://medium.com/@ylashin/consume-onnx-models-using-azure-machine-learning-service-869b1029d107)
 
-
 ## Android:
 - [project TFlite-Android iOS](https://www.tensorflow.org/lite/examples) [_comment_]  
 - [TF-Lite to (Pb) --> COREML or ONNX](https://blog.xmartlabs.com/2019/11/22/TFlite-to-CoreML/) [_comment_]  
@@ -54,6 +53,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## MXNET:
 - [pytorch 2 MXNET](https://medium.com/apache-mxnet/mxnet-for-pytorch-users-in-10-minutes-a7353863406a) [_comment_]  
+
+## MODELS:
+- [models Python 3.7](https://github.com/rasbt/deeplearning-models) [_comment_]  
 
 ## Varie:
 - [GAUGAN](http://nvidia-research-mingyuliu.com/gaugan) [_comment_]  
