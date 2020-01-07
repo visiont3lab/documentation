@@ -57,6 +57,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## MODELS:
 - [models Python 3.7](https://github.com/rasbt/deeplearning-models) [_comment_]  
 
+## DeepLearning for audio:
+- [Deep Learning for Audio Classification](https://www.youtube.com/playlist?list=PLhA3b2k8R3t2Ng1WW_7MiXeh1pfQJQi_P) [_comment_]  
+
 ## Varie:
 - [GAUGAN](http://nvidia-research-mingyuliu.com/gaugan) [_comment_]  
 - [CycleGAN-Art](https://arxiv.org/pdf/1703.10593.pdf) [_comment_]  
