@@ -61,6 +61,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Deep Learning for Audio Classification](https://www.youtube.com/playlist?list=PLhA3b2k8R3t2Ng1WW_7MiXeh1pfQJQi_P) [_comment_]  
 
 ## Varie:
+
+- [PySlowFast](https://github.com/facebookresearch/SlowFast) [_comment_]  
 - [YoloACT-Colab](https://www.immersivelimit.com/tutorials/yolact-with-google-colab?fbclid=IwAR2VNFLJD6x5YvcuHv-bGzUH1WR286XBVt24Dbkk9ogvG8CA6_ThLl0kow8) [_comment_]  
 - [GAUGAN](http://nvidia-research-mingyuliu.com/gaugan) [_comment_]  
 - [CycleGAN-Art](https://arxiv.org/pdf/1703.10593.pdf) [_comment_]  
