@@ -23,6 +23,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Disttilation Pytorch](https://github.com/NervanaSystems/distiller) [_comment_]  
 
 ## Kubernetes:
+- [Kubeflow-end to end](https://codelabs.developers.google.com/codelabs/cloud-kubeflow-e2e-gis/index.html?index=..%2F..index#0) [_comment_]  
 - [Kubeflow](https://github.com/kubeflow/kfserving) [_comment_]  
 - [MicroK8s](https://thenewstack.io/deploy-a-single-node-kubernetes-instance-in-seconds-with-microk8s/) [_comment_]  
 
