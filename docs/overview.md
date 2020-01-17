@@ -27,6 +27,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Kubeflow](https://github.com/kubeflow/kfserving) [_comment_]  
 - [MicroK8s](https://thenewstack.io/deploy-a-single-node-kubernetes-instance-in-seconds-with-microk8s/) [_comment_]  
 
+## OCR-Alternative:
+- [xxxxx](https://medium.com/saarthi-ai/how-to-build-your-own-ocr-a5bb91b622ba) [_comment_]  
+
 ## Tutorial:
 - [Pytorch-save-load-model](https://medium.com/udacity-pytorch-challengers/saving-loading-your-model-in-pytorch-741b80daf3c) [_comment_]  
 - [Pytorch-intro](https://towardsdatascience.com/understanding-pytorch-with-an-example-a-step-by-step-tutorial-81fc5f8c4e8e
