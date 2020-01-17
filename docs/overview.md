@@ -28,6 +28,10 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [MicroK8s](https://thenewstack.io/deploy-a-single-node-kubernetes-instance-in-seconds-with-microk8s/) [_comment_]  
 
 ## Tutorial:
+- [Pytorch-save-load-model](https://medium.com/udacity-pytorch-challengers/saving-loading-your-model-in-pytorch-741b80daf3c) [_comment_]  
+
+https://medium.com/udacity-pytorch-challengers/saving-loading-your-model-in-pytorch-741b80daf3c
+
 - [Pytorch-intro](https://towardsdatascience.com/understanding-pytorch-with-an-example-a-step-by-step-tutorial-81fc5f8c4e8e
 ) [_comment_]  
 - [MIT AI - 2019](https://www.newworldai.com/mit-6-s191-introduction-deep-learning-new-2019-edition/) [_comment_]  
