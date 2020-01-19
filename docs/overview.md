@@ -32,7 +32,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Yolo-OCR-keras-text-det](https://github.com/blackandrose/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow) [_comment_]  
 
 ## Tutorial:
-- [Pytorch-save-load-model](https://medium.com/udacity-pytorch-challengers/saving-loading-your-model-in-pytorch-741b80daf3c) [_comment_]  
+- [Pytorch-save-load-model](https://medium.com/udacity-pytorch-challengers/saving-loading-your-model-in-pytorch-741b80daf3c) [_comment_]
 - [Pytorch-intro](https://towardsdatascience.com/understanding-pytorch-with-an-example-a-step-by-step-tutorial-81fc5f8c4e8e
 ) [_comment_]  
 - [MIT AI - 2019](https://www.newworldai.com/mit-6-s191-introduction-deep-learning-new-2019-edition/) [_comment_]  
@@ -69,6 +69,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Deep Learning for Audio Classification](https://www.youtube.com/playlist?list=PLhA3b2k8R3t2Ng1WW_7MiXeh1pfQJQi_P) [_comment_]  
 
 ## Varie:
+
+- [Tensorflow_object_counting](https://github.com/ahmetozlu/tensorflow_object_counting_api) [_comment_]  
 - [Yolo3 -custom obj detection](https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/)[_comment_]  
 - [Yolo3-CSGO-Bot](https://pylessons.com/YOLOv3-CSGO-detection/) [_comment_]  
 - [PySlowFast](https://github.com/facebookresearch/SlowFast) [_comment_]  
