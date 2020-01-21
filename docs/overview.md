@@ -70,6 +70,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Varie:
 
+- [Human Activity Recognition ](https://www.pyimagesearch.com/2019/11/25/human-activity-recognition-with-opencv-and-deep-learning/) [_comment_]  
 - [Tensorflow_object_counting](https://github.com/ahmetozlu/tensorflow_object_counting_api) [_comment_]  
 - [Yolo3 -custom obj detection](https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/)[_comment_]  
 - [Yolo3-CSGO-Bot](https://pylessons.com/YOLOv3-CSGO-detection/) [_comment_]  
