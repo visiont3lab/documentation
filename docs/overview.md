@@ -62,6 +62,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Openpose-shoes:
 - [Openpose feet dataset](https://cmu-perceptual-computing-lab.github.io/foot_keypoint_dataset/) [_comment_]  
 - [Openspose Unity](https://github.com/chang-chih-yao/Shoes-Try-On-in-AR) [_comment_] 
+- [Jeeliz-convert 3d to json](https://medium.com/@StartupJeeliz/creating-a-snapchat-like-filter-with-jeelizs-facefilter-api-part-1-creating-your-first-filter-1e7a5000543c) [_comment_]  
 - [Jeeliz-cube-demo](https://jeeliz.com/demos/faceFilter/demos/aFrame/cube/) [_comment_] 
 - [Tensorspace.ThreeJS](https://tensorspace.org/html/docs/startHello.html) [_comment_]  
 
