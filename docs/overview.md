@@ -75,7 +75,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Deep Learning for Audio Classification](https://www.youtube.com/playlist?list=PLhA3b2k8R3t2Ng1WW_7MiXeh1pfQJQi_P) [_comment_]  
 
 ## Varie:
+- [xxxxx](https://site) [_comment_]  
 
+- [(NLP) Real World Project in Web Using Flask](https://www.youtube.com/watch?v=7E_CtqM_nsE) [_comment_]  
 - [End2End-Sentim-Analysis](https://www.ahmedbesbes.com/blog/end-to-end-machine-learning) [_comment_]  
 - [Human Activity Recognition ](https://www.pyimagesearch.com/2019/11/25/human-activity-recognition-with-opencv-and-deep-learning/) [_comment_]  
 - [Tensorflow_object_counting](https://github.com/ahmetozlu/tensorflow_object_counting_api) [_comment_]  
