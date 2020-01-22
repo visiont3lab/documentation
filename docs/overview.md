@@ -80,6 +80,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Tensorflow_object_counting](https://github.com/ahmetozlu/tensorflow_object_counting_api) [_comment_]  
 - [Yolo3 -custom obj detection](https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/)[_comment_]  
 - [Yolo3-CSGO-Bot](https://pylessons.com/YOLOv3-CSGO-detection/) [_comment_]  
+- [Neurlanet-3d views-layers](https://tensorspace.org/) [_comment_]  
 - [PySlowFast](https://github.com/facebookresearch/SlowFast) [_comment_]  
 - [YoloACT-Colab](https://www.immersivelimit.com/tutorials/yolact-with-google-colab?fbclid=IwAR2VNFLJD6x5YvcuHv-bGzUH1WR286XBVt24Dbkk9ogvG8CA6_ThLl0kow8) [_comment_]  
 - [GAUGAN](http://nvidia-research-mingyuliu.com/gaugan) [_comment_]  
