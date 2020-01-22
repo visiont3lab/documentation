@@ -59,6 +59,11 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [TFlite-Object-detection-custom-quantize](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi) [_comment_]  
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 
+## Openpose-shoes:
+- [Openpose feet dataset](https://cmu-perceptual-computing-lab.github.io/foot_keypoint_dataset/) [_comment_]  
+- [Openspose Unity](https://github.com/chang-chih-yao/Shoes-Try-On-in-AR) [_comment_] 
+- [Jeeliz-cube-demo](https://jeeliz.com/demos/faceFilter/demos/aFrame/cube/) [_comment_] 
+
 ## MXNET:
 - [pytorch 2 MXNET](https://medium.com/apache-mxnet/mxnet-for-pytorch-users-in-10-minutes-a7353863406a) [_comment_]  
 
@@ -69,7 +74,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Deep Learning for Audio Classification](https://www.youtube.com/playlist?list=PLhA3b2k8R3t2Ng1WW_7MiXeh1pfQJQi_P) [_comment_]  
 
 ## Varie:
-
 
 - [End2End-Sentim-Analysis](https://www.ahmedbesbes.com/blog/end-to-end-machine-learning) [_comment_]  
 - [Human Activity Recognition ](https://www.pyimagesearch.com/2019/11/25/human-activity-recognition-with-opencv-and-deep-learning/) [_comment_]  
