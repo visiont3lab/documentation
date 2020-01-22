@@ -63,6 +63,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Openpose feet dataset](https://cmu-perceptual-computing-lab.github.io/foot_keypoint_dataset/) [_comment_]  
 - [Openspose Unity](https://github.com/chang-chih-yao/Shoes-Try-On-in-AR) [_comment_] 
 - [Jeeliz-cube-demo](https://jeeliz.com/demos/faceFilter/demos/aFrame/cube/) [_comment_] 
+- [Tensorspace.ThreeJS](https://tensorspace.org/html/docs/startHello.html) [_comment_]  
 
 ## MXNET:
 - [pytorch 2 MXNET](https://medium.com/apache-mxnet/mxnet-for-pytorch-users-in-10-minutes-a7353863406a) [_comment_]  
