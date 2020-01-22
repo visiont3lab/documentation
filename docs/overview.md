@@ -112,6 +112,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
 
 ## style transfer:
+- [style transfer](https://deepdreamgenerator.com/best/week) [_style transfer] 
 - [fastphotostyle](https://github.com/NVIDIA/FastPhotoStyle) [_style transfer] 
 - [style transfer](https://github.com/ShafeenTejani/fast-style-transfer) [tensorflow]  
 - [_style transfer](https://github.com/tensorflow/lucid) [good-colab]  
