@@ -32,6 +32,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Yolo-OCR-keras-text-det](https://github.com/blackandrose/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow) [_comment_]  
 
 ## Tutorial:
+
+- [ml5-javascript](https://www.youtube.com/watch?v=jmznx0Q1fP0) [_comment_]  
 - [Pytorch-save-load-model](https://medium.com/udacity-pytorch-challengers/saving-loading-your-model-in-pytorch-741b80daf3c) [_comment_]
 - [Pytorch-intro](https://towardsdatascience.com/understanding-pytorch-with-an-example-a-step-by-step-tutorial-81fc5f8c4e8e
 ) [_comment_]  
