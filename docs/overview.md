@@ -82,6 +82,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
 
+- [Realtime Drowsiness and Yawn Detection](https://www.youtube.com/watch?v=RDuLqCT5RxY) [_comment_]  
 - [(NLP) Real World Project in Web Using Flask](https://www.youtube.com/watch?v=7E_CtqM_nsE) [_comment_]  
 - [End2End-Sentim-Analysis](https://www.ahmedbesbes.com/blog/end-to-end-machine-learning) [_comment_]  
 - [Human Activity Recognition ](https://www.pyimagesearch.com/2019/11/25/human-activity-recognition-with-opencv-and-deep-learning/) [_comment_]  
