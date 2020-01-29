@@ -63,7 +63,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Openpose-shoes:
 
--[Tut-app-ios](https://snack.expo.io/@bacon/ar-video-tutorial) [_comment_]  
+- [face swap](https://www.youtube.com/watch?v=FxShbrOnQko) [_comment_]  
+- [Tut-app-ios](https://snack.expo.io/@bacon/ar-video-tutorial) [_comment_]  
 - [Openpose feet dataset](https://cmu-perceptual-computing-lab.github.io/foot_keypoint_dataset/) [_comment_]  
 - [Openspose Unity](https://github.com/chang-chih-yao/Shoes-Try-On-in-AR) [_comment_] 
 - [Jeeliz-convert 3d to json](https://medium.com/@StartupJeeliz/creating-a-snapchat-like-filter-with-jeelizs-facefilter-api-part-1-creating-your-first-filter-1e7a5000543c) [_comment_]  
