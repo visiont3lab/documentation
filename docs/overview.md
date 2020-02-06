@@ -32,7 +32,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Yolo-OCR-keras-text-det](https://github.com/blackandrose/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow) [_comment_]  
 
 ## Tutorial:
-
 - [ml5-javascript](https://www.youtube.com/watch?v=jmznx0Q1fP0) [_comment_]  
 - [Pytorch-save-load-model](https://medium.com/udacity-pytorch-challengers/saving-loading-your-model-in-pytorch-741b80daf3c) [_comment_]
 - [Pytorch-intro](https://towardsdatascience.com/understanding-pytorch-with-an-example-a-step-by-step-tutorial-81fc5f8c4e8e
@@ -62,7 +61,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 
 ## Openpose-shoes:
-
 - [face swap](https://www.youtube.com/watch?v=FxShbrOnQko) [_comment_]  
 - [Tut-app-ios](https://snack.expo.io/@bacon/ar-video-tutorial) [_comment_]  
 - [Openpose feet dataset](https://cmu-perceptual-computing-lab.github.io/foot_keypoint_dataset/) [_comment_]  
@@ -79,6 +77,12 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## DeepLearning for audio:
 - [Deep Learning for Audio Classification](https://www.youtube.com/playlist?list=PLhA3b2k8R3t2Ng1WW_7MiXeh1pfQJQi_P) [_comment_]  
+
+## TENSORFLOW-JS:
+- [xxxxx](https://site) [_comment_]  
+- [rnn-HOW TO LEARN THE SUM ](https://storage.googleapis.com/tfjs-examples/addition-rnn/dist/index.html) [_comment_]  
+- [TENSORFLOW-JS -Models for RED-Node](https://github.com/tensorflow/tfjs-models) [_comment_]  
+- [TENSORFLOW-JS - example](https://github.com/tensorflow/tfjs/blob/master/GALLERY.md) [_comment_]  
 
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
