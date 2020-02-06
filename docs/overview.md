@@ -60,6 +60,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [TFlite-Object-detection-custom-quantize](https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi) [_comment_]  
 - [BEST-iOS Demo - CORE-ML](https://github.com/motlabs/awesome-ml-demos-with-ios) [_comment_]  
 
+## PWA:
+- [PWA-TensorflowJS](https://github.com/IBM/tfjs-web-app) [_comment_]  
+
 ## Openpose-shoes:
 - [face swap](https://www.youtube.com/watch?v=FxShbrOnQko) [_comment_]  
 - [Tut-app-ios](https://snack.expo.io/@bacon/ar-video-tutorial) [_comment_]  
