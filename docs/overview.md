@@ -138,7 +138,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [style transfer](https://towardsdatascience.com/real-time-video-neural-style-transfer-9f6f84590832) [realtime]  
 
 ## ROS-raspberry:
-- [Ros-raspberry CAR](https://www.youtube.com/user/prandtlmayer/videos)[_FIGO!] 
+-[Ros + NODE-red](https://www.youtube.com/watch?v=TnsPZ7C84Jg)[_FIGO!]
+-[Ros-raspberry CAR](https://www.youtube.com/user/prandtlmayer/videos)[_FIGO!] 
 
 ## DESCRIBE IMAGES:
 - [PYTORCH DESCRIBE IMAGES](https://github.com/fawazsammani/look-and-modify/blob/master/README.md) [_comment_] 
