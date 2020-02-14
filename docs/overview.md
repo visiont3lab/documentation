@@ -90,6 +90,10 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [TENSORFLOW-JS -Models for RED-Node](https://github.com/tensorflow/tfjs-models) [_comment_]  
 - [TENSORFLOW-JS - example](https://github.com/tensorflow/tfjs/blob/master/GALLERY.md) [_comment_]  
 
+## FREE EBOOK for CODING-MACHINE LEARNING:
+- [free ebook for coding - machine learning](https://drive.google.com/drive/folders/1MsgsLN62-B_JHgX1gUn-SjKIFRTgzOpJ)
+
+
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
 
