@@ -95,7 +95,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Balena-Sense IOT:
 - [Balena-Sense IOT](https://www.balena.io/blog/build-an-environment-and-air-quality-monitor-with-raspberry-pi/) [_comment_] 
-- [xxxxx](https://site) [_comment_]  
+- [Pi Sense Hat Emulator](https://www.youtube.com/watch?v=VnwO-nCOuU8) [_comment_]  
 
 
 ## Varie:
