@@ -93,6 +93,10 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## FREE EBOOK for CODING-MACHINE LEARNING:
 - [free ebook for coding - machine learning](https://drive.google.com/drive/folders/1MsgsLN62-B_JHgX1gUn-SjKIFRTgzOpJ)
 
+## Balena-Sense IOT:
+- [Balena-Sense IOT](https://www.balena.io/blog/build-an-environment-and-air-quality-monitor-with-raspberry-pi/) [_comment_] 
+- [xxxxx](https://site) [_comment_]  
+
 
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
