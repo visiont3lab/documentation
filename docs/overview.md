@@ -98,6 +98,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Pi Sense Hat Emulator](https://www.youtube.com/watch?v=VnwO-nCOuU8) [_comment_]  
 - [Pi Sense Hat Emulator to node-red + interface](https://www.youtube.com/watch?v=UKv4_jvPtr4) [awesome]  
 
+## ArchGIS:
+- [jupyter-archgis](https://www.youtube.com/watch?v=xcM-wEN6vQQ&t=876s) [_comment_]  
+
 
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
