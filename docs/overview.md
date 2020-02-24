@@ -105,6 +105,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
 
+- [DETECTRON2-Medium](https://medium.com/deepvisionguru/how-to-embed-detectron2-in-your-computer-vision-project-817f29149461) [_comment_]  
 - [DETECTRON2-plate](https://medium.com/towards-artificial-intelligence/number-plate-detection-recognition-detectron-v2-5ddad2a532d0) [_comment_]  
 - [DETECTRON2!!!!!](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) [_comment_]  
 - [custom-object-detection-from-scratch](https://towardsdatascience.com/detailed-tutorial-build-your-custom-real-time-object-detector-5ade1017fd2d) [_comment_]  
