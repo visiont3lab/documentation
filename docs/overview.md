@@ -107,7 +107,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 - [DETECTRON2-plate](https://medium.com/towards-artificial-intelligence/number-plate-detection-recognition-detectron-v2-5ddad2a532d0) [_comment_]  
 - [DETECTRON2!!!!!](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) [_comment_]  
-- [Fiagata_Colab](https://github.com/tugstugi/dl-colab-notebooks) [Absolutely!]  
+- [custom-object-detection-from-scratch](https://towardsdatascience.com/detailed-tutorial-build-your-custom-real-time-object-detector-5ade1017fd2d) [_comment_]  
+- [Figata_Colab](https://github.com/tugstugi/dl-colab-notebooks) [Absolutely!]  
 - [GOD of COLAB](https://www.google-colab.com/github/) [IMPRESSIVE!]  
 - [Realtime Drowsiness and Yawn Detection](https://www.youtube.com/watch?v=RDuLqCT5RxY) [_comment_]  
 - [(NLP) Real World Project in Web Using Flask](https://www.youtube.com/watch?v=7E_CtqM_nsE) [_comment_]  
