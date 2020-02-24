@@ -105,6 +105,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
 
+- [DETECTRON2-plate](https://medium.com/towards-artificial-intelligence/number-plate-detection-recognition-detectron-v2-5ddad2a532d0) [_comment_]  
 - [DETECTRON2!!!!!](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) [_comment_]  
 - [Fiagata_Colab](https://github.com/tugstugi/dl-colab-notebooks) [Absolutely!]  
 - [GOD of COLAB](https://www.google-colab.com/github/) [IMPRESSIVE!]  
