@@ -105,6 +105,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Varie:
 - [xxxxx](https://site) [_comment_]  
 
+- [DETECTRON2!!!!!](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) [_comment_]  
 - [Fiagata_Colab](https://github.com/tugstugi/dl-colab-notebooks) [Absolutely!]  
 - [GOD of COLAB](https://www.google-colab.com/github/) [IMPRESSIVE!]  
 - [Realtime Drowsiness and Yawn Detection](https://www.youtube.com/watch?v=RDuLqCT5RxY) [_comment_]  
