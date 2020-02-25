@@ -32,6 +32,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Yolo-OCR-keras-text-det](https://github.com/blackandrose/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow) [_comment_]  
 
 ## Tutorial:
+
+- [Amazing_ColabV2](https://github.com/firmai/awesome-google-colab) [Amazing Colab]  
 - [INTROTODEEPLEARNING](http://introtodeeplearning.com/) [_GOOOD_]  
 - [portilia-TF2.0](https://www.ustreamy.co/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp) [_comment_]  
 - [notebook-machineLearning](https://github.com/rugantio/MachineLearningCourse) [_comment_]  
