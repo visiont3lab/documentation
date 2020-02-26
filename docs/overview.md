@@ -6,6 +6,10 @@ sidebar_label: Overview
 custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/overview.md
 ---
 
+## Visualization:
+- [many example jupyter](https://nbviewer.jupyter.org/) [_comment_]  
+- [Panel](https://panel.holoviz.org/index.html) [_comment_]  
+
 ## T3LAB notes:
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
