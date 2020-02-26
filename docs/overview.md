@@ -319,6 +319,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [VisualComputingInstitute/TrackR-CNN](https://github.com/VisualComputingInstitute/TrackR-CNN/tree/master) [_comment_]  
 
 
+## CAR-PLATE
+https://github.com/jasur-2902/CarRecognition
+
 ## Convert PyTorch Models in Production:
 
 - [Onnx-2-caffe](https://github.com/MTlab/onnx2caffe) [_good_]  
