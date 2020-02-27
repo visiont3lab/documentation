@@ -163,6 +163,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [_style transfer](https://github.com/tensorflow/lucid) [good-colab]  
 - [style transfer](https://towardsdatascience.com/real-time-video-neural-style-transfer-9f6f84590832) [realtime]  
 
+## DOCKER-WINDOWS WSL linux subsystem:
+https://medium.com/faun/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa
+
 ## ROS-raspberry:
 -[Ros + NODE-red](https://www.youtube.com/watch?v=TnsPZ7C84Jg)[_FIGO!]
 -[Ros-raspberry CAR](https://www.youtube.com/user/prandtlmayer/videos)[_FIGO!] 
