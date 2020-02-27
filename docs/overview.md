@@ -164,7 +164,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [style transfer](https://towardsdatascience.com/real-time-video-neural-style-transfer-9f6f84590832) [realtime]  
 
 ## DOCKER-WINDOWS WSL linux subsystem:
-https://medium.com/faun/docker-running-seamlessly-in-windows-subsystem-linux-6ef8412377aa
+- [OCKER-WINDOWS WSL2 linux subsystem](https://medium.com/swlh/wsl-2-docker-edge-tech-preview-native-linux-containers-w-o-emulation-b41667e6dbef) [_comment_]  
 
 ## ROS-raspberry:
 -[Ros + NODE-red](https://www.youtube.com/watch?v=TnsPZ7C84Jg)[_FIGO!]
