@@ -13,6 +13,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
 
 
+## Self_Driving:
+- [ LGSVL Simulator 2020.01](https://www.lgsvlsimulator.com/) [_comment_]  
+
 ## Visualization:
 - [many example jupyter](https://nbviewer.jupyter.org/) [_comment_]  
 - [Panel](https://panel.holoviz.org/index.html) [_comment_]  
