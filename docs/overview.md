@@ -5,6 +5,11 @@ title: Overview
 sidebar_label: Overview
 custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/overview.md
 ---
+## T3LAB notes:
+- [xxxxx](https://site) [_comment_]  
+- [xxxxx](https://site) [_comment_]  
+- [xxxxx](https://site) [_comment_]  
+- [xxxxx](https://site) [_comment_]  
 
 ## Site2Copy:
 - [Site2Copy-AI Services](https://datalabs.optisolbusiness.com/datalabs-vision-analytics/?fbclid=IwAR3A5UDVPeRSh4d1rke-kY-2cFcFGMG99UW_xqdqvLKMVpQKe3vCx25iSCE) [_comment_]  
@@ -12,6 +17,18 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Damage Detector](https://github.com/nicolasmetallo/car-damage-detector) [_comment_]  
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
 
+## TimeSeries for Analysis:
+- [Medium confronto - time series](https://towardsdatascience.com/an-overview-of-time-series-forecasting-models-a2fa7a358fcb) [confronti]  
+- [Deep-Learning-Machine-Learning-Stock](https://github.com/LastAncientOne/Deep-Learning-Machine-Learning-Stock) [_comment_]  - [PracticalTimeSeriesAnalysis](https://github.com/PracticalTimeSeriesAnalysis/BookRepo) [book O'really - sheep]  
+- [Time Series Forec](https://www.youtube.com/watch?v=JntA9XaTebs&t=2584s) [_comment_]  
+- [Hvass-1](hhttps://github.com/Hvass-Labs/TensorFlow-Tutorials) [TensorFlow-Tutorials]  
+- [Hvass-2](https://github.com/SimFin/simfin-tutorials) [simfin-tutorials]  
+- [Hvass-3](https://github.com/Hvass-Labs/FinanceOps) [FinanceOps]  
+- [Hvass-4](https://github.com/Hvass-Labs/MetaOps) [MetaOps]  
+
+
+## AWS EC2
+- [EC2 - AWS instance in the right way](https://towardsdatascience.com/my-data-scientist-doesnt-know-how-to-properly-start-an-ec2-instance-b1b9f4920359) [_comment_]  
 
 ## Self_Driving:
 - [ LGSVL Simulator 2020.01](https://www.lgsvlsimulator.com/) [_comment_]  
@@ -22,21 +39,10 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [kepler.gl](https://github.com/keplergl/kepler.gl/blob/master/docs/keplergl-jupyter/user-guide.md) [_comment_]  
 - [Elia-Iron_MaidenMaps](https://www.thunderforest.com/maps/spinal-map/) [_comment_]  
 
-## T3LAB notes:
-- [xxxxx](https://site) [_comment_]  
-- [xxxxx](https://site) [_comment_]  
 
 ## Vision:
 - [Vision](https://visionappster.com/visionappster.html) [_comment_]  
 
-## Pruning/Distillation:
-- [NN Distiller](https://nervanasystems.github.io/distiller/install.html) [_comment_]  
-- [Pytorch](https://forums.fast.ai/t/model-pruning-in-fast-ai/49832) [_comment_]  
-- [Pruning](https://towardsdatascience.com/pruning-deep-neural-network-56cae1ec5505) [_comment_] 
-- [Tensorflow](https://github.com/rootally/Pruning-in-Neural-Network/blob/master/script.ipynb) [_comment_]  
-- [Pytorch](https://jacobgil.github.io/deeplearning/pruning-deep-learning) [_comment_]  
-- [Disttilation GitHub](https://github.com/dkozlov/awesome-knowledge-distillation) [_comment_]  
-- [Disttilation Pytorch](https://github.com/NervanaSystems/distiller) [_comment_]  
 
 ## Kubernetes:
 - [Kubeflow-end to end](https://codelabs.developers.google.com/codelabs/cloud-kubeflow-e2e-gis/index.html?index=..%2F..index#0) [_comment_]  
@@ -164,6 +170,15 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Parallel Thread MPI4py:
 - [CINECA SUMMER PARALLEL MPI4py](https://hpc-forge.cineca.it/files/ScuolaCalcoloParallelo_WebDAV/public/anno-2017/26th_Summer_School_on_Parallel_Computing/Bologna/) [_comment_] 
 - [Packt_parallel_comp](https://www.packtpub.com/application-development/python-parallel-programming-solutions-video) [_comment_]  
+
+## Pruning/Distillation:
+- [NN Distiller](https://nervanasystems.github.io/distiller/install.html) [_comment_]  
+- [Pytorch](https://forums.fast.ai/t/model-pruning-in-fast-ai/49832) [_comment_]  
+- [Pruning](https://towardsdatascience.com/pruning-deep-neural-network-56cae1ec5505) [_comment_] 
+- [Tensorflow](https://github.com/rootally/Pruning-in-Neural-Network/blob/master/script.ipynb) [_comment_]  
+- [Pytorch](https://jacobgil.github.io/deeplearning/pruning-deep-learning) [_comment_]  
+- [Disttilation GitHub](https://github.com/dkozlov/awesome-knowledge-distillation) [_comment_]  
+- [Disttilation Pytorch](https://github.com/NervanaSystems/distiller) [_comment_]  
 
 ## style transfer:
 - [rimuovere cose](https://pythonawesome.com/an-open-source-framework-for-generative-image-inpainting-task/) [_remove object] 
