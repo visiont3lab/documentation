@@ -21,7 +21,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Medium confronto - time series](https://towardsdatascience.com/an-overview-of-time-series-forecasting-models-a2fa7a358fcb) [confronti]  
 - [Deep-Learning-Machine-Learning-Stock](https://github.com/LastAncientOne/Deep-Learning-Machine-Learning-Stock) [_comment_]  - [PracticalTimeSeriesAnalysis](https://github.com/PracticalTimeSeriesAnalysis/BookRepo) [book O'really - sheep]  
 - [Time Series Forec](https://www.youtube.com/watch?v=JntA9XaTebs&t=2584s) [_comment_]  
-- [Hvass-1](hhttps://github.com/Hvass-Labs/TensorFlow-Tutorials) [TensorFlow-Tutorials]  
+- [Hvass-1](https://github.com/Hvass-Labs/TensorFlow-Tutorials) [TensorFlow-Tutorials]  
 - [Hvass-2](https://github.com/SimFin/simfin-tutorials) [simfin-tutorials]  
 - [Hvass-3](https://github.com/Hvass-Labs/FinanceOps) [FinanceOps]  
 - [Hvass-4](https://github.com/Hvass-Labs/MetaOps) [MetaOps]  
