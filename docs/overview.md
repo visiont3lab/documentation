@@ -12,7 +12,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [xxxxx](https://site) [_comment_]  
 
 ## Site2Copy:
-- [Site2Copy-AI Services](https://datalabs.optisolbusiness.com/datalabs-vision-analytics/?fbclid=IwAR3A5UDVPeRSh4d1rke-kY-2cFcFGMG99UW_xqdqvLKMVpQKe3vCx25iSCE) [_comment_]  
+- [Site2Copy-AI Services](https://datalabs.optisolbusiness.com/datalabs-vision-analytics/?fbclid=IwAR3A5UDVPeRSh4d1rke-kY-2cFcFGMG99UW_xqdqvLKMVpQKe3vCx25iSCE) [_comment._]  
 - [Delligence](https://delligence.ai/index.html) [_comment_]  
 - [Damage Detector](https://github.com/nicolasmetallo/car-damage-detector) [_comment_]  
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
