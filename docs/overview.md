@@ -11,6 +11,13 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
 
+## Book in colab
+- [PythonDataScienceHandbook](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)[_comment_]  
+
+## Gis GOOGLE HEART ENGINE
+- [EEwPython 1](https://colab.research.google.com/github/csaybar/EEwPython/blob/master/index.ipynb#scrollTo=sawLOXhjfkNF) [_comment_]  
+- [EEwPython 2](https://colab.research.google.com/github/csaybar/EEwPython/blob/master/cmip5.ipynb#scrollTo=glND7gZSBa7n) [_comment_]  
+
 ## Site2Copy:
 - [Site2Copy-AI Services](https://datalabs.optisolbusiness.com/datalabs-vision-analytics/?fbclid=IwAR3A5UDVPeRSh4d1rke-kY-2cFcFGMG99UW_xqdqvLKMVpQKe3vCx25iSCE) [_comment._]  
 - [Delligence](https://delligence.ai/index.html) [_comment_]  
@@ -20,6 +27,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## TimeSeries for Analysis:
 - [Medium confronto - time series](https://towardsdatascience.com/an-overview-of-time-series-forecasting-models-a2fa7a358fcb) [confronti]  
 - [Deep-Learning-Machine-Learning-Stock](https://github.com/LastAncientOne/Deep-Learning-Machine-Learning-Stock) [_comment_]  - [PracticalTimeSeriesAnalysis](https://github.com/PracticalTimeSeriesAnalysis/BookRepo) [book O'really - sheep]  
+- [Intro_pandas_etc](https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython) [_comment_]  
 - [Time Series Forec](https://www.youtube.com/watch?v=JntA9XaTebs&t=2584s) [_comment_]  
 - [Hvass-1](https://github.com/Hvass-Labs/TensorFlow-Tutorials) [TensorFlow-Tutorials]  
 - [Hvass-2](https://github.com/SimFin/simfin-tutorials) [simfin-tutorials]  
