@@ -34,6 +34,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Hvass-3](https://github.com/Hvass-Labs/FinanceOps) [FinanceOps]  
 - [Hvass-4](https://github.com/Hvass-Labs/MetaOps) [MetaOps]  
 
+## BUSINESS CASES
+- [Business_Analytics](https://github.com/firmai/python-business-analytics) [_comment_]  
 
 ## AWS EC2
 - [EC2 - AWS instance in the right way](https://towardsdatascience.com/my-data-scientist-doesnt-know-how-to-properly-start-an-ec2-instance-b1b9f4920359) [_comment_]  
@@ -42,6 +44,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [ LGSVL Simulator 2020.01](https://www.lgsvlsimulator.com/) [_comment_]  
 
 ## Visualization:
+- [Repo-Full_Visualization](https://github.com/fasouto/awesome-dataviz#books) [_comment_]  
 - [many example jupyter](https://nbviewer.jupyter.org/) [_comment_]  
 - [Panel](https://panel.holoviz.org/index.html) [_comment_]  
 - [kepler.gl](https://github.com/keplergl/kepler.gl/blob/master/docs/keplergl-jupyter/user-guide.md) [_comment_]  
@@ -50,7 +53,6 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Vision:
 - [Vision](https://visionappster.com/visionappster.html) [_comment_]  
-
 
 ## Kubernetes:
 - [Kubeflow-end to end](https://codelabs.developers.google.com/codelabs/cloud-kubeflow-e2e-gis/index.html?index=..%2F..index#0) [_comment_]  
