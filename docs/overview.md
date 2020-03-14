@@ -44,6 +44,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [ LGSVL Simulator 2020.01](https://www.lgsvlsimulator.com/) [_comment_]  
 
 ## Visualization:
+- [Superset](https://github.com/apache/incubator-superset) [_comment_]  
 - [Altair](https://altair-viz.github.io/gallery/index.html#line-charts) [_comment_]  
 - [Repo-Full_Visualization](https://github.com/fasouto/awesome-dataviz#books) [_comment_]  
 - [many example jupyter](https://nbviewer.jupyter.org/) [_comment_]  
