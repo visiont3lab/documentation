@@ -35,6 +35,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Hvass-4](https://github.com/Hvass-Labs/MetaOps) [MetaOps]  
 
 ## BUSINESS CASES
+- [Machine-Learning-cases-industry](https://github.com/firmai/industry-machine-learning#healthcare-general) [_comment_]  
 - [Business_Analytics](https://github.com/firmai/python-business-analytics) [_comment_]  
 
 ## AWS EC2
