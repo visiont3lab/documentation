@@ -120,6 +120,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [models Python 3.7](https://github.com/rasbt/deeplearning-models) [_comment_]  
 
 ## DeepLearning for audio:
+- [Deep Learning for Audio](https://www.youtube.com/channel/UCZPFjMe1uRSirmSpznqvJfQ/videos) [_comment_]  
 - [Deep Learning for Audio Classification](https://www.youtube.com/playlist?list=PLhA3b2k8R3t2Ng1WW_7MiXeh1pfQJQi_P) [_comment_]  
 
 ## TENSORFLOW-JS:
