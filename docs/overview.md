@@ -106,6 +106,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [PWA-TensorflowJS](https://github.com/IBM/tfjs-web-app) [_comment_]  
 
 ## AUTOENCODERS:
+- [Data Science Project](https://github.com/Sardhendu/Data-Science-Projects) [_comment_]  
 - [Credit Card Fraud - Keras Autoenc](https://github.com/curiousily/Credit-Card-Fraud-Detection-using-Autoencoders-in-Keras/blob/master/fraud_detection.ipynb) [_comment_]  
 
 ## Openpose-shoes:
