@@ -26,6 +26,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
 
 ## TimeSeries for Analysis:
+- [forcasting-beginning](https://www.youtube.com/watch?v=VYpAodcdFfA&t=763s) [_comment_]  
 - [Medium confronto - time series](https://towardsdatascience.com/an-overview-of-time-series-forecasting-models-a2fa7a358fcb) [confronti]  
 - [Deep-Learning-Machine-Learning-Stock](https://github.com/LastAncientOne/Deep-Learning-Machine-Learning-Stock) [_comment_]  - [PracticalTimeSeriesAnalysis](https://github.com/PracticalTimeSeriesAnalysis/BookRepo) [book O'really - sheep]  
 - [Intro_pandas_etc](https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython) [_comment_]  
