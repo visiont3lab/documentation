@@ -5,6 +5,7 @@ title: Overview
 sidebar_label: Overview
 custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/overview.md
 ---
+
 ## T3LAB notes:
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
@@ -103,6 +104,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## PWA:
 - [PWA-TensorflowJS](https://github.com/IBM/tfjs-web-app) [_comment_]  
+
+## AUTOENCODERS:
+- [Credit Card Fraud - Keras Autoenc](https://github.com/curiousily/Credit-Card-Fraud-Detection-using-Autoencoders-in-Keras/blob/master/fraud_detection.ipynb) [_comment_]  
 
 ## Openpose-shoes:
 - [face swap](https://www.youtube.com/watch?v=FxShbrOnQko) [_comment_]  
