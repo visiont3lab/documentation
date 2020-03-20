@@ -26,7 +26,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
 
 ## Stock Prediction:
-- [xxxxx](https://github.com/huseinzol05/Stock-Prediction-Models) [_comment_]  
+- [Stock-Prediction-Models](https://github.com/huseinzol05/Stock-Prediction-Models) [_comment_]  
 
 ## TimeSeries for Analysis:
 - [forcasting-beginning](https://www.youtube.com/watch?v=VYpAodcdFfA&t=763s) [_comment_]  
