@@ -25,6 +25,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Damage Detector](https://github.com/nicolasmetallo/car-damage-detector) [_comment_]  
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
 
+## Stock Prediction:
+- [xxxxx](https://github.com/huseinzol05/Stock-Prediction-Models) [_comment_]  
+
 ## TimeSeries for Analysis:
 - [forcasting-beginning](https://www.youtube.com/watch?v=VYpAodcdFfA&t=763s) [_comment_]  
 - [Medium confronto - time series](https://towardsdatascience.com/an-overview-of-time-series-forecasting-models-a2fa7a358fcb) [confronti]  
