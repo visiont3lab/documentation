@@ -26,6 +26,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
 
 ## Stock Prediction:
+- [Datcamp-tut.](https://www.datacamp.com/community/tutorials/lstm-python-stock-market) [_comment_]  
 - [Gold-prediction](https://github.com/sid321axn/Udacity-MLND-Capstone-Gold-Price-Prediction/blob/master/MLND_Capstone_Final.ipynb) [_comment_]  
 - [stock-market-forec](https://towardsdatascience.com/stock-market-forecasting-using-time-series-c3d21f2dd37f) [_comment_]  
 - [Stock-Prediction-Models](https://github.com/huseinzol05/Stock-Prediction-Models) [_comment_]  
