@@ -68,6 +68,10 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 ## Vision:
 - [Vision](https://visionappster.com/visionappster.html) [_comment_]  
 
+## Drone:
+- [ESC-brushless](https://www.youtube.com/watch?v=OZNxbxL7cdc&t=324s) [_comment_]  
+- [connect-ESC](https://www.youtube.com/watch?v=j61Q3e8AFR4) [_comment_]
+
 ## Kubernetes:
 - [Kubeflow-end to end](https://codelabs.developers.google.com/codelabs/cloud-kubeflow-e2e-gis/index.html?index=..%2F..index#0) [_comment_]  
 - [Kubeflow](https://github.com/kubeflow/kfserving) [_comment_]  
