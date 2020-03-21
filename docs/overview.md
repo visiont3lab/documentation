@@ -61,6 +61,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [kepler.gl](https://github.com/keplergl/kepler.gl/blob/master/docs/keplergl-jupyter/user-guide.md) [_comment_]  
 - [Elia-Iron_MaidenMaps](https://www.thunderforest.com/maps/spinal-map/) [_comment_]  
 
+## Iot Anomaly Detection:
+- [Iot Anomaly Detection](https://github.com/sid321axn/coursera/blob/master/coursera_ai/AssignmentAnomalyDetection.ipynb) [_comment_]  
 
 ## Vision:
 - [Vision](https://visionappster.com/visionappster.html) [_comment_]  
