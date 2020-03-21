@@ -27,6 +27,8 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Data_Science_Application](https://techvidvan.com/tutorials/data-science-applications/) [_comment_]  
 
 ## Stock Prediction:
+https://colab.research.google.com/github/Vjais/Deep-Learning-projects/blob/master/Stock_prediction_on_microsoft_data_using_tensorflow.ipynb#scrollTo=pej8n7mDsTM5
+
 - [Stock-API](https://github.com/jimitmistry/Stock-Market-Prediction-with-LSTM-and-Data-Pipeline/blob/master/stock_data_pipeline.ipynb) [_comment_]  
 - [Datcamp-tut.](https://www.datacamp.com/community/tutorials/lstm-python-stock-market) [_comment_]  
 - [Gold-prediction](https://github.com/sid321axn/Udacity-MLND-Capstone-Gold-Price-Prediction/blob/master/MLND_Capstone_Final.ipynb) [_comment_]  
