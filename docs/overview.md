@@ -19,6 +19,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [EEwPython 1](https://colab.research.google.com/github/csaybar/EEwPython/blob/master/index.ipynb#scrollTo=sawLOXhjfkNF) [_comment_]  
 - [EEwPython 2](https://colab.research.google.com/github/csaybar/EEwPython/blob/master/cmip5.ipynb#scrollTo=glND7gZSBa7n) [_comment_]  
 - [Scipy-2018-data](https://github.com/sid321axn/scipy2018-geospatial-data) [_comment_]  
+- [Deep Learning Satellite images](https://github.com/robmarkcole/satellite-image-deep-learning) [_comment_]  
 
 ## Site2Copy:
 - [Site2Copy-AI Services](https://datalabs.optisolbusiness.com/datalabs-vision-analytics/?fbclid=IwAR3A5UDVPeRSh4d1rke-kY-2cFcFGMG99UW_xqdqvLKMVpQKe3vCx25iSCE) [_comment._]  
