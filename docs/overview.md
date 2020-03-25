@@ -66,6 +66,9 @@ https://colab.research.google.com/github/Vjais/Deep-Learning-projects/blob/maste
 - [kepler.gl](https://github.com/keplergl/kepler.gl/blob/master/docs/keplergl-jupyter/user-guide.md) [_comment_]  
 - [Elia-Iron_MaidenMaps](https://www.thunderforest.com/maps/spinal-map/) [_comment_]  
 
+## Esercizi_Deep_Learning:
+- [Notebook-deep_Learning](https://github.com/fchollet/deep-learning-with-python-notebooks) [_comment_]  
+
 ## Iot Anomaly Detection:
 - [Iot Anomaly Detection](https://github.com/sid321axn/coursera/blob/master/coursera_ai/AssignmentAnomalyDetection.ipynb) [_comment_]  
 
@@ -86,7 +89,6 @@ https://colab.research.google.com/github/Vjais/Deep-Learning-projects/blob/maste
 - [Yolo-OCR-keras-text-det](https://github.com/blackandrose/Text-Detection-using-Yolo-Algorithm-in-keras-tensorflow) [_comment_]  
 
 ## Tutorial:
-
 - [Amazing_ColabV2](https://github.com/firmai/awesome-google-colab) [Amazing Colab]  
 - [INTROTODEEPLEARNING](http://introtodeeplearning.com/) [_GOOOD_]  
 - [portilia-TF2.0](https://www.ustreamy.co/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp) [_comment_]  
