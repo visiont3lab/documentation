@@ -16,6 +16,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [PythonDataScienceHandbook](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)[_comment_]  
 
 ## Gis GOOGLE HEART ENGINE
+- [EE-Medium](https://medium.com/google-earth/down-to-earth-with-ai-platform-7bc363abf4fa) [_comment_]  
 - [EEwPython 1](https://colab.research.google.com/github/csaybar/EEwPython/blob/master/index.ipynb#scrollTo=sawLOXhjfkNF) [_comment_]  
 - [EEwPython 2](https://colab.research.google.com/github/csaybar/EEwPython/blob/master/cmip5.ipynb#scrollTo=glND7gZSBa7n) [_comment_]  
 - [Scipy-2018-data](https://github.com/sid321axn/scipy2018-geospatial-data) [_comment_]  
