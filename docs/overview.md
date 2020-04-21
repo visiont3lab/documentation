@@ -26,7 +26,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [Deep Learning Satellite images](https://github.com/robmarkcole/satellite-image-deep-learning) [_comment_]  
 
 ## Tools:
-- [schedule-operations](https://github.com/alseambusher/crontab-ui) [_comment_]  
+- [schedule-operations-CRONJOB](https://github.com/alseambusher/crontab-ui) [CONTRIB-UI]  
 
 ## Site2Copy:
 - [Site2Copy-AI Services](https://datalabs.optisolbusiness.com/datalabs-vision-analytics/?fbclid=IwAR3A5UDVPeRSh4d1rke-kY-2cFcFGMG99UW_xqdqvLKMVpQKe3vCx25iSCE) [_comment._]  
