@@ -14,6 +14,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Healthcare
 - [MONAI-NVIDIA-notebooks](https://github.com/Project-MONAI/MONAI/tree/master/examples/notebooks) [Monai!!!- fighissimo]  
+- [TensorRT Healthimage--notebooks](https://devblogs.nvidia.com/speeding-up-deep-learning-inference-using-tensorrt/?ncid=so-link-70994) [TensorRT]  
 
 ## Book in colab
 - [PythonDataScienceHandbook](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)[_comment_]  
@@ -81,6 +82,7 @@ https://colab.research.google.com/github/Vjais/Deep-Learning-projects/blob/maste
 
 ## Vision:
 - [Vision](https://visionappster.com/visionappster.html) [_comment_]  
+- [MonkV1](https://github.com/Tessellate-Imaging/monk_v1/blob/master/study_roadmaps/4_image_classification_zoo/Classifier%20-%20Fashion%20Images%20tagging.ipynb) [_comment_]  
 
 ## Drone:
 - [ESC-brushless](https://www.youtube.com/watch?v=OZNxbxL7cdc&t=324s) [_comment_]  
