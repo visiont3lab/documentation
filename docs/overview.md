@@ -19,6 +19,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [MONAI-NVIDIA-notebooks](https://github.com/Project-MONAI/MONAI/tree/master/examples/notebooks) [Monai!!!- fighissimo]  
 - [TensorRT Healthimage--notebooks](https://devblogs.nvidia.com/speeding-up-deep-learning-inference-using-tensorrt/?ncid=so-link-70994) [TensorRT]  
 
+## Autoencoders
+- [ Adversarial Latent Autoencoders](https://github.com/podgorskiy/ALAE) [CVPR2020] 
+
 ## Book in colab
 - [PythonDataScienceHandbook](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)[_comment_]  
 
