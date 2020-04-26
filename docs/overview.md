@@ -21,6 +21,7 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 
 ## Autoencoders
 - [ Adversarial Latent Autoencoders-deeffakes-faces](https://github.com/podgorskiy/ALAE) [CVPR2020] 
+- [Everybody Can Make Deepfakes Now!](https://www.youtube.com/watch?v=mUfJOQKdtAk&feature=youtu.be) [_comment_]  
 
 ## Book in colab
 - [PythonDataScienceHandbook](https://colab.research.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/Index.ipynb)[_comment_]  
