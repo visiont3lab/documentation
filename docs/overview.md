@@ -12,6 +12,9 @@ custom_edit_url: https://github.com/visiont3lab/documentation/edit/master/docs/o
 - [xxxxx](https://site) [_comment_]  
 - [xxxxx](https://site) [_comment_]  
 
+## Green Screen
+- [make GreenScreen](https://www.catalyzex.com/paper/arxiv:2004.00626) [_comment_]  
+
 ## Healthcare
 - [MONAI-NVIDIA-notebooks](https://github.com/Project-MONAI/MONAI/tree/master/examples/notebooks) [Monai!!!- fighissimo]  
 - [TensorRT Healthimage--notebooks](https://devblogs.nvidia.com/speeding-up-deep-learning-inference-using-tensorrt/?ncid=so-link-70994) [TensorRT]  
